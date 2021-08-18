@@ -170,7 +170,32 @@
             </div>
         </div>
     </section>
-    <section id="scores-section">High Scores</section>
+    <section id="scores-section">
+        <div class="modal fade" id="highscores-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Highscores</h2>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="high-scores-list"></tbody>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-hover" id="clear-scores">Clear Scores</button>
+                        <button type="button" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="clear-section">Clear Scores</section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
