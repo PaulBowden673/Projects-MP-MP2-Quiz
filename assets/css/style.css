@@ -6,6 +6,9 @@
     border: none;
 }
 
+html {
+    background-color: yellow;
+}
 body {
     font-family: 'Meriweather Sans', sans-serif;
     background-color: black;
