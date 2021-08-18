@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    font-family: ;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/images/wet-floor-sign-bg.jpeg") center center no-repeat;
+    background-size: cover;
+}
+
+.btn {
+    background-color: #c20047;
+    border: none;
+    color: #fff;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+}
+
+.btn-hover:hover {
+    background-color: #ffbb59;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+/* Home Section Styles */
+
+#home-section {
+    background-color: black;
+    border-radius: 25px;
+    width: 600px;
+    max-width: 80%;
+    padding: 25px;
+    border: 1px solid #fff;
+}
+
+.home-container {
+    margin: 20px 0 20px 0;
+}
+
+#heading {
+    font-family: ;
+    text-align: center;
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+#home-section p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-block {
+    width: 100%;
+    margin: 10px 0;
+    font-family: "Luckiest Guy", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+}
