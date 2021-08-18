@@ -132,3 +132,29 @@ body {
     color: black;
     cursor: pointer;
 }
+
+/* Modal Content Styles */
+
+.modal-content {
+    background-color: black;
+    border: 1px solid #fff;
+}
+
+.modal-footer .btn {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 
+    font-size: 2.25rem;
+    letter-spacing: 2px;
+    padding-top: 8px;
+}
+
+h3, h4 {
+    font-family: 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
