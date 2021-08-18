@@ -61,7 +61,7 @@ strong {
 }
 
 #heading {
-    font-family: 'Merriweather Sans', sans-serif ;
+    font-family: 'Merriweather Sans', sans-serif;
     text-align: center;
     font-size: 3.25rem;
     text-transform: uppercase;
@@ -157,9 +157,178 @@ h2 {
     padding-top: 8px;
 }
 
-h3, h4 {
+h3,
+h4 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
+/* Rules Section Modal */
+
+strong {
+    color: #ffbb59;
+    text-transform: uppercase;
+}
+
+/* Highscores Section Modal */
+
+.table {
+    color: #fff;
+}
+
+.table th {
+    text-transform: uppercase;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+tbody {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+
+
+    @media (max-width: 646px) {
+        #home-section p {
+        font-size: 15px;
+    }
+}
+
+    @media (max-width: 474px) {
+        #heading {
+        font-size: 2.8rem;
+    }
+}
+
+    @media (max-width: 320px) {
+        #heading {
+        font-size: 2.5rem;
+    }
+
+    @media (hover: none) {
+        .ans-btn:hover {
+            background-color: #c20047;
+            color: #fff;
+        }
+    }
+
+    @media (max-width: 600px) {
+        #question {
+            font-size: 18px;
+        }
+
+        #quiz-game-section .btn {
+            font-size: 16px;
+        }
+
+        #exit-game {
+            font-size: 20px;
+        }
+
+        #quiz-game-section h4 {
+            font-size: 18px;
+        }
+
+        #score {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+
+        #questions-area {
+            padding-top: 10px;
+        }
+
+        #question {
+            font-size: 14px;
+        }
+
+        #quiz-game-section .btn {
+            font-size: 14px;
+        }
+
+        #exit-game {
+            margin-top: 0;
+            font-size: 16px;
+        }
+
+        #progress-bar {
+            width: 100%;
+        }
+
+        #score-display {
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+
+    @media (max-width: 308px) {
+        #quiz-game-section h4 {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-height: 655px) {
+        #quiz-game-section {
+            padding: 22px;
+        }
+
+        #quiz-game-section .btn {
+            margin: 5px 0;
+        }
+    }
+
+    @media (max-height: 568px) {
+        #quiz-game-section {
+            padding: 18px;
+        }
+
+        hr {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        h2 {
+            font-size: 2rem;
+        }
+
+        .modal-footer .btn {
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        li {
+            font-size: 15px;
+        }
+
+        .table th {
+            font-size: 1.2rem;
+        }
+    }
+
+    /* Finish Quiz Section Modal */
+
+    @media (max-width: 420px) {
+        #finish-quiz-section h2 {
+            font-size: 1.45rem;
+        }
+
+        #return-home,
+        #play-again,
+        #save-score {
+            width: 100%;
+        }
+    }
