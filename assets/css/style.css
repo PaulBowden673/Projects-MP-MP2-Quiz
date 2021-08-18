@@ -78,3 +78,57 @@ body {
     letter-spacing: 2px;
     font-size: 25px;
 }
+
+
+/* Start Quiz Section Styles */
+
+#quiz-game-section {
+    background-color: black;
+    border-radius: 25px;
+    width: 800px;
+    max-width: 80%;
+    padding: 50px 25px 50px 25px;
+    border: 1px solid #fff;
+}
+
+#progress-bar {
+    float: left;
+}
+
+.progress-bar {
+    background-color: #ffbb59;
+}
+
+#score-display {
+    float: right;
+    padding-top: 10px;
+}
+
+#score {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#questions-area {
+    text-align: center;
+    clear: both;
+    padding-top: 30px;
+}
+
+#question {
+    font-size: 20px;
+}
+
+#quiz-game-section .btn {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.ans-btn:hover {
+    background-color: #ffbb59;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
