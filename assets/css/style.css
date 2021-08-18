@@ -38,6 +38,9 @@ body {
     display: none;
 }
 
+strong {
+    color: red;
+}
 
 
 /* Home Section Styles */
