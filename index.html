@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
 
-<section id="home-section">
-    <div class="container home-container">
-        <div class="row">
-            <div class="col-12">
-                <h1 id="heading">Health & Safety Quiz</h1>
-                <p>Test Your Health & Safety Knowledge</p>
-                <div class="controls">
-                    <button type="button" id="play-btn" class="btn btn-block btn-hover">Play</button>
-                    <button type="button" id="rules-btn" class="btn btn-block btn-hover" data-bs-toggle="modal" data-bs-target="#rules-modal">Rules</button>
-                    <button type="button" id="highscores-btn" class="btn btn-block btn-hover" data-bs-toggle="modal" data-bs-target="#highscores-modal">Highscores</button>
+    <section id="home-section">
+        <div class="container home-container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 id="heading">Health & Safety Quiz</h1>
+                    <p>Test Your Health & Safety Knowledge</p>
+                    <div class="controls">
+                        <button type="button" id="play-btn" class="btn btn-block btn-hover">Play</button>
+                        <button type="button" id="rules-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
+                            data-bs-target="#rules-modal">Rules</button>
+                        <button type="button" id="highscores-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
+                            data-bs-target="#highscores-modal">Highscores</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section> 
-<section id="quiz-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div id="game-area">
-                    <div id="progress-bar">
-                        <h4 id="progress-text"></h4>
-                        <div class="progress">
-                            <div id="progress-bar-full" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </section>
+    <section id="quiz-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div id="game-area">
+                        <div id="progress-bar">
+                            <h4 id="progress-text"></h4>
+                            <div class="progress">
+                                <div id="progress-bar-full" class="progress-bar" role="progressbar" aria-valuenow="0"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                    </div>
-</section>
-<section id="finish-section">Finish Quiz</section>
-<section id="return-section">Return</section>
-<section id="play-section">Play Again</section>
-<section id="scores-section">High Scores</section>
-<section id="clear-section">Clear Scores</section>
+                        <div id="score-display">
+                            <h4>Score: <span id="score">0</span></h4>
+                        </div>
+                        <div id="questions-area">
+                            <h4>Question:</h4>
+                            <p id="question"></p>
+                        </div>
+    </section>
+    <section id="finish-section">Finish Quiz</section>
+    <section id="return-section">Return</section>
+    <section id="play-section">Play Again</section>
+    <section id="scores-section">High Scores</section>
+    <section id="clear-section">Clear Scores</section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
