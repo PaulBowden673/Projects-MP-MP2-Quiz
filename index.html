@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Health & Safety Quiz to test your knowledge.">
+    <meta name="author" content="Paul Bowden">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Health & Safety Quiz</title>
+
 </head>
 
 <body>
@@ -56,7 +59,7 @@
                             <button class="btn ans-btn" data-number="4">4</button>
                         </div>
                     </div>
-                    <div id="exit-game-section" >
+                    <div id="exit-game-section">
                         <button type="button" id="exit-game">Quit Game</button>
                     </div>
                 </div>
@@ -64,29 +67,32 @@
         </div>
 
     </section>
-    <section id="finish-section"><div class="modal fade" id="finish-quiz-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Well Done!</h2>
-                </div>
-                <div class="modal-body">
-                    <p>You have reached the end of the Health & Safety Quiz.</p>
-                    <h4>Total Score:</h4>
-                    <h3><span id="final-score">0</span> (out of 200)</h3>
-                    <form>
-                        <p>To save the score enter your name:</p>
-                        <input type="text" name="username" id="username" class="form-control" placeholder="Enter your name"> 
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-hover" id="return-home">Return Home</button>
-                    <button type="button" class="btn btn-hover" id="play-again">Play Again</button>
-                    <button type="button" class="btn btn-hover" id="save-score" onclick="saveHighScore(event)" disabled>Save Score</button>
+    <section id="finish-section">
+        <div class="modal fade" id="finish-quiz-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Well Done!</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>You have reached the end of the Health & Safety Quiz.</p>
+                        <h4>Total Score:</h4>
+                        <h3><span id="final-score">0</span> (out of 200)</h3>
+                        <form>
+                            <p>To save the score enter your name:</p>
+                            <input type="text" name="username" id="username" class="form-control"
+                                placeholder="Enter your name">
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-hover" id="return-home">Return Home</button>
+                        <button type="button" class="btn btn-hover" id="play-again">Play Again</button>
+                        <button type="button" class="btn btn-hover" id="save-score" onclick="saveHighScore(event)"
+                            disabled>Save Score</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <section id="exit-section">
@@ -128,7 +134,8 @@
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-hover" id="restart-yes" data-bs-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-hover" id="restart-yes"
+                            data-bs-dismiss="modal">Yes</button>
                         <button type="button" class="btn btn-hover" id="restart-no" data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
@@ -144,23 +151,30 @@
                     </div>
                     <div class="modal-body">
                         <p class="text-center">
-                         Answer as many of the questions correctly as you can to earn the highest score. The game will end once all of the questions have been answered.
+                            Answer as many of the questions correctly as you can to earn the highest score. The game
+                            will end once all of the questions have been answered.
                         </p>
                         <h4>How To Play:</h4>
                         <ul>
                             <li>Press <strong>Play</strong> to start the quiz</li>
-                            <li>Once the game starts, you will be given a question, select one of the 4 options to answer the question</li>
-                            <li>If you answer correctly, the selected answer will turn green, if answered incorrectly this will turn red</li>
-                            <li>For every correct answer, the score will increase by 10 points, incorrect answers get 0 points</li>
+                            <li>Once the game starts, you will be given a question, select one of the 4 options to
+                                answer the question</li>
+                            <li>If you answer correctly, the selected answer will turn green, if answered incorrectly
+                                this will turn red</li>
+                            <li>For every correct answer, the score will increase by 10 points, incorrect answers get 0
+                                points</li>
                             <li>Once the question is answered, you will be presented with the next question.</li>
                             <li>Your progress is recorded in the top left</li>
                             <li>You can end the game anytime by selecting <strong>Quit Game</strong></li>
                             <li>Once all the questions have been answered, the quiz game will end</li>
-                            <li>You can save the total score earned during the game by entering a username and clicking <strong>Save Score</strong></li>
+                            <li>You can save the total score earned during the game by entering a username and clicking
+                                <strong>Save Score</strong></li>
                             <li>Click <strong>Play Again</strong> to start the quiz game again</li>
                             <li>Click <strong>Return Home</strong> to go back to the home screen</li>
-                            <li>If you wish to view the highscores table, then from the Home section, select <strong>Highscores</strong>, only the top 10 scores will be displayed</li>
-                            <li>To clear the highscores table of previously recorded scores, click <strong>Clear Scores</strong></li>
+                            <li>If you wish to view the highscores table, then from the Home section, select
+                                <strong>Highscores</strong>, only the top 10 scores will be displayed</li>
+                            <li>To clear the highscores table of previously recorded scores, click <strong>Clear
+                                    Scores</strong></li>
                         </ul>
                     </div>
                     <div class="modal-footer">
@@ -219,7 +233,8 @@
             </div>
         </div>
     </section>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
