@@ -101,7 +101,7 @@
                             Are you sure you want to go back to the Home page?
                         </p>
                         <p>
-                            Any unsaved scores or progress will be lost.
+                            Any unsaved scores and progress will be lost.
                         </p>
                     </div>
                     <div class="modal-footer">
@@ -112,7 +112,29 @@
             </div>
         </div>
     </section>
-    <section id="play-section">Play Again</section>
+    <section id="play-section">
+        <div class="modal fade" id="play-again-modal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Please Confirm</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Are you sure you want to restart the quiz game?
+                        </p>
+                        <p>
+                            Any unsaved scores and progress will be lost.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-hover" id="restart-yes" data-bs-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-hover" id="restart-no" data-bs-dismiss="modal">No</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="scores-section">High Scores</section>
     <section id="clear-section">Clear Scores</section>
 
