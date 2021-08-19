@@ -14,6 +14,7 @@
 - A Home page with buttons to start the game and also view the game rules.
 - A rules section so users can learn how to play the game.
 - A highscores section so users can keep track of thier scores and complete against other users for the highest score.
+- A Contact form so users can contact me with feedbck.
 - 
  
   
@@ -29,12 +30,14 @@
 
 1.  As a returning visitor, I want to still find the game enjoyable and challenging. 
 2.  As a returning visitor, I want to be able to see the highest scores and try to beat them.
+3.  As a returning visitor, I want to be able to give feedback on the quiz.
 
 
 ***Frequent Visitor***
 
 1. As a frequent visitor, I want to still find the game enjoyable and challenging.
 2. As a frequent visitor, I want to be able to try to beat the highest scores.
+3. As a Freequent visitor, I want to be able to give feedback on the quiz and ask about updates.
 
 ## Design
     
