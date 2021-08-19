@@ -6,11 +6,9 @@
     border: none;
 }
 
-html {
-    background-color: yellow;
-}
+
 body {
-    font-family: 'Meriweather Sans', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     background-color: black;
     color: #fff;
     display: flex;
@@ -18,8 +16,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background: url("assets/images/wet-floor-sign-bg.jpeg") center center no-repeat;
-    background-size: cover;
+   
 }
 
 .btn {
@@ -46,7 +43,6 @@ body {
 strong {
     color: red;
 }
-
 
 /* Home Section Styles */
 
@@ -86,7 +82,6 @@ strong {
     letter-spacing: 2px;
     font-size: 25px;
 }
-
 
 /* Start Quiz Section Styles */
 
@@ -170,7 +165,7 @@ h4 {
 /* Rules Section Modal */
 
 strong {
-    color: #ffbb59;
+    color: red;
     text-transform: uppercase;
 }
 
@@ -195,9 +190,7 @@ tbody {
     font-size: 20px;
 }
 
-
-
-
+/* Media Queries */
     @media (max-width: 646px) {
         #home-section p {
         font-size: 15px;
