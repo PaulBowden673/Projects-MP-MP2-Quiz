@@ -1,104 +1,187 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+<a href="https://paulbowden673.github.io/Projects-MP-MP2/" target="_blank">Click  here</a> to access the site.
 
-Welcome Paul Bowden,
+**I built this website to give users a fun and enjoyable game to play. I based the game on Health & Safety questions so it can also be used for training**
+## UX ##
+**The purpose of this project is to create am interactive frontend website using HTML, CSS and JavaScript. In order to do this I have built a Health & Safety Quiz game, where the users have to answer 20 questions about general Workplace Health & Safety**
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+**I incorporated the following things in order for the target audience to have a great experience when visiting my website,**
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- A Home page with buttons to start the game and also view the game rules.
+- A rules section so users can learn how to play the game.
+- A highscores section so users can keep track of thier scores and complete against other users for the highest score.
+- A Contact form so users can contact me with feedbck.
+- 
+ 
+  
+**USER STORIES**
 
-A blue button should appear to click: _Make Public_,
+***First Time Visitor***
 
-Another blue button should appear to click: _Open Browser_.
+1.  As a first time visitor, I want to easily understand the purpose of the site and learn how to play the game.
+2.  As a first time visitor, I want to find the game enjoyable and challenging.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+***Returning Visitor***
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+1.  As a returning visitor, I want to still find the game enjoyable and challenging. 
+2.  As a returning visitor, I want to be able to see the highest scores and try to beat them.
+3.  As a returning visitor, I want to be able to give feedback on the quiz.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+***Frequent Visitor***
 
-## Release History
+1. As a frequent visitor, I want to still find the game enjoyable and challenging.
+2. As a frequent visitor, I want to be able to try to beat the highest scores.
+3. As a Freequent visitor, I want to be able to give feedback on the quiz and ask about updates.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Design
+    
+   ### Colour Scheme
+   - The 3 main colours used on the site are Black, Yellow and Red which are appropriate.
+   ### Typography
+   - The Roboto font is the main font used throughout the whole site, with sans-serif as fallback in case the font does not load correctly. It is frequently used and easy to read. 
+   - The Merriweather Sans font is used for headings throughout the site, with sans-serif fallback in case the font does not load correctly, it is optimised for a bold display on modern web browsers. 
+   
+   ### Imagery
+     
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+## Wireframe Mock-ups 
+These can be found at the following links 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- [Wireframe 3 screen sizes]()
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Features
+- Responsive on all screen sizes
+- Interactive elements 
+### [Home Page](Https://github.com/PaulBowden673/Projects-MP-MP2/index.html)
+- Navigation links for the Home page and Conact page.
+- Buttons to view the rules and highscores, resart the game and clear the high scores list.
+- 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### [Contact Page](Https://github.com/PaulBowden673/Projects-MP-MP2/contact.html)
+ - Form to send feedback to the website owner
+ - Links to social media pages
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Technologies Used
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Languages 
+ -  [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)  - This was used for the layout of the website.
+ -  [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)    - This was used to style the website.
+### Libraries 
+ - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) -  This was used to design a mobile-first responsive website layout quickly, also using components ( navigation bar, modal, form, footer)
+ - [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - This was used to make the website interactive and make the game work.
+### Tools
+ - [Google Fonts](https://fonts.google.com/) - This was used for selecting the fonts for the website. 
+ - [amiresponsive](http://ami.responsivedesign.is/) - This was used to check how responsive the site is on different devices.
+ - [Gitpod](https://www.gitpod.io/) - Online IDE linked to GitHub repository, this was used to write my code.
+ - [GitHub](https://github.com/) - This was used to store, host and deploy the project files, after being pushed from Gitpod.
+ - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - This was used to audit My site for quality and to check responsiveness. 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Future updates
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Change the qustions so the answers are in a random order to avoid regular users knowing where the answers will be
+- Add more quations to give a better experience for returning users
+- Add futher sets of questions to make the game more challenging, such as Food Safety, Fire Safety, Licensing.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Testing
+ I have thoroughly tested this website and was unable to find any broken links within it. I have also tried to submit blank contact forms and forms with incorrect email addresses which gave me an error message on each field to show that the required attribute within my form is working as it should.
+ 
+ ### Testing User Stories from UX section
+User stories from the UX section were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals. 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ #### First Time visitor
+1. As a first time Visitor, I want to easily understand the purpose of the site and how to play the game.
+    1. On entering the site, the user is presented with a clean website detailing the purpose of the site and giving instructions on how to play the game after clicking on the rules button.  
+2. As a first time visitor, I want to find the game enjoyable and challenging.
+    1. . 
+ 
+ #### Returning Visitor
+1.  As a returning visitor, I want to still find the game enjoyable and challenging. 
+    1.  
+2.  As a returning visitor, I want to be able to give feedback to the website owner and suggest improvements or ideas.
+    1. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+#### Frequent Visitor
+1. As a frequent visitor,  I want to still find the game enjoyable and challenging.
+    1. 
+2. As a frequent visitor, 
+    1. 
+    
+#### Devices
+- Samsung S9
+- Samsung S6 Lte Tablet
+- Ipad 
+- Iphone 6/7/8
+- Desktop with 4K 2056px Monitor
+- Dell Inspiron 5405 Laptop 
+#### Browsers
+- Microsoft Edge
+- Chrome
+- Firefox
+- Safari 
+## Issues/Bugs
 
-------
+### Validation
+All files passed validation testing at 
+- [HTML]
+![HTML Validation]
+- [CSS]
 
-## FAQ about the uptime script
+![CSS Validation]
 
-**Why have you added this script?**
+- [Lighthouse Report Result](https://developers.google.com/web/tools/lighthouse)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+ Lighthouse Validation Desktop
+![Lighthouse Validation Desktop]
+ Lighthouse Validation Mobile
+![Lighthouse Validation Mobile]
 
-**How will this affect me?**
+## Deployment 
+### GitHub Pages
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The project was deployed at GitHub Pages using the following steps
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. Log in to GitHub
+2. Go to the repositories tab at the top of the screen. 
+3. Click on the repository named PaulBowden673/Projects-MP-MP2
+4. At the top of the repository, locate and click the 'Settings' button on the menu.
+5. Scroll down the Settings page until you locate 'GitHub Pages' section.
+6. Under 'Source', click on the dropdown menu and select 'Master Branch'.
+7. The page will refresh, scroll back down the page and locate the published site in the 'GitHub Pages' section.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Forking the GitHub Repository
 
-**So….?**
+Forking the repository will make a copy of the original repository, to view or make changes without affecting the original repository using the following steps
+1. Log in to GitHub and locate the repository named PaulBowden673/Projects-Mp-MP2
+2. At the top of the Repository, above the 'Settings' button on the menu, locate the 'Fork' button.
+3. You should now have a copy of the original repository in your GitHub account.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### Making a Local Clone
 
-**Can I opt out?**
+1. Log in to GitHub and locate the repository named PaulBowden673/Projects-MP-MP2
+2. Under the repository name, click 'Clone or Download'.
+3. To clone the repository using HTTPS, under 'Clone with HTTPS', copy the link.
+4. Open Git Bash
+5. Change the current working directory to where you want the cloned directory to be made.
+6. Type 'git clone' and paste the URL you copied.
+7. Press Enter. Your local clone will be created.
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Credits
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Content
 
-**Anything more?**
+### Media
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
+## Acknowledgements
+- [Code Institute](https://www.codeinstitute.net/)
+- Newcastle College
+- Bootstrap - framework
 ---
-
-Happy coding!
