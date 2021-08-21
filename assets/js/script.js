@@ -281,4 +281,23 @@ username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
 
- 
+//function to save the high score
+saveHighScore = e => {
+    e.preventDefault();
+
+    const score = {
+        score: finalScore.innerText,
+        name: username.value
+    };
+
+    highScores.push(score);
+
+    highScores.sort((a, b) => {
+        return b.score - a.score;
+    });
+
+    highScores.splice(10);
+
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('index.html');
+};
