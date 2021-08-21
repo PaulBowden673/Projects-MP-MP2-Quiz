@@ -187,3 +187,13 @@ const clearBtn = document.getElementById('clear-scores');
 const clearYesBtn = document.getElementById('cs-yes');
 const clearNoBtn = document.getElementById('cs-no');
 const highScoresList = document.getElementById('high-scores-list');
+
+//variables for quiz game
+
+let currentQuestion = {};
+let acceptingAnswers = true;
+let questionCounter = 0;
+let availableQuestions = [];
+let score = 0;
+const SCORE_POINTS = 10;
+const MAX_QUESTIONS = 20;
