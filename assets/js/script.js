@@ -270,4 +270,15 @@ incrementScore = num => {
     finalScore.innerText = score;
 };
 
+//end quiz section
+
+// const userScore = localStorage.getItem('userScore');
+const highScores = (JSON.parse(localStorage.getItem('highScores')) || []);
+const MAX_HIGH_SCORES = 10;
+
+//event listener to allow user to click the save button once username entered
+username.addEventListener('keyup', () => {
+    saveScoreBtn.disabled = !username.value;
+});
+
  
