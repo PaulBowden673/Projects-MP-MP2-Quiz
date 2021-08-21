@@ -314,9 +314,15 @@ playAgainBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("hide");
 });
 
-//event listener if user select yes button
+//event listener if user selects yes
 restartYesBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("hide");
     scoreText.innerText = 0;
     startQuiz();
 });
+
+//event listener if user selects no 
+restartNoBtn.addEventListener('click', () => {
+    $("#finish-quiz-modal").modal("show");
+});
+
