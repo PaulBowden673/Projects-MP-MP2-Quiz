@@ -1,4 +1,4 @@
-<a href="https://paulbowden673.github.io/Projects-MP-MP2/" target="_blank">Click  here</a> to access the site.
+<a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" target="_blank">Click  here</a> to access the site.
 
 **I built this website to give users a fun and enjoyable game to play. I based the game on Health & Safety questions so it can also be used for training**
 ## UX ##
@@ -14,8 +14,7 @@
 - A Home page with buttons to start the game and also view the game rules.
 - A rules section so users can learn how to play the game.
 - A highscores section so users can keep track of thier scores and complete against other users for the highest score.
-- A Contact form so users can contact me with feedbck.
-- 
+- A Contact form so users can contact me with feedback via EmailJS.
  
   
 **USER STORIES**
@@ -37,18 +36,19 @@
 
 1. As a frequent visitor, I want to still find the game enjoyable and challenging.
 2. As a frequent visitor, I want to be able to try to beat the highest scores.
-3. As a Freequent visitor, I want to be able to give feedback on the quiz and ask about updates.
+3. As a Freequent visitor, I want to be able to give feedback on the quiz.
 
 ## Design
     
    ### Colour Scheme
-   - The 3 main colours used on the site are Black, Yellow and Red which are appropriate.
+   - The 3 main colours used on the site are Black, Blue and Red which are appropriate.
    ### Typography
    - The Roboto font is the main font used throughout the whole site, with sans-serif as fallback in case the font does not load correctly. It is frequently used and easy to read. 
    - The Merriweather Sans font is used for headings throughout the site, with sans-serif fallback in case the font does not load correctly, it is optimised for a bold display on modern web browsers. 
    
    ### Imagery
-     
+
+- Background image taken from Pexels. Photo by Ash @ModernAfflatus
 
 
 ## Wireframe Mock-ups 
