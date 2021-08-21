@@ -313,3 +313,10 @@ playAgainBtn.addEventListener('click', () => {
     $("#play-again-modal").modal("show");
     $("#finish-quiz-modal").modal("hide");
 });
+
+//event listener if user select yes button
+restartYesBtn.addEventListener('click', () => {
+    $("#finish-quiz-modal").modal("hide");
+    scoreText.innerText = 0;
+    startQuiz();
+});
