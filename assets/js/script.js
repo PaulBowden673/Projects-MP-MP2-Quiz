@@ -188,7 +188,7 @@ const clearYesBtn = document.getElementById('cs-yes');
 const clearNoBtn = document.getElementById('cs-no');
 const highScoresList = document.getElementById('high-scores-list');
 
-//variables for quiz
+//variables for quiz game
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -198,11 +198,11 @@ let score = 0;
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 20;
 
-//function for new question
+//function to render new question
 
 function renderQuestion() {
 
-    //if function to check if quiz ended
+    //if function to check if the game has ended
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         $("#finish-quiz-modal").modal({
             backdrop: 'static',
@@ -211,18 +211,18 @@ function renderQuestion() {
         return $("#finish-quiz-modal").modal("show");
     }
 
-     //questions counter increases which updates the progress bar and text
-     questionCounter++;
-     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
-     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+    //questions counter increases which updates the progress bar and text
+    questionCounter++;
+    progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+    progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
 
-      //randomise the questions
+    //variable created to randomise the questions
     const questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
-     //function to assign answer boxes with relevant options that correspond to the correct question
-     answers.forEach(ans => {
+    //function to assign answer boxes with relevant options that correspond to the correct question
+    answers.forEach(ans => {
         const number = ans.dataset['number'];
         ans.innerText = currentQuestion['ans' + number];
     });
@@ -232,7 +232,7 @@ function renderQuestion() {
     acceptingAnswers = true;
 }
 
-/function to check which answer the user has chose
+//function to check which answer the user has chose
 answers.forEach(ans => {
     ans.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -248,21 +248,22 @@ answers.forEach(ans => {
         if (classToApply === 'btn-correct') {
             incrementScore(SCORE_POINTS);
         }
-    //set class to change color depending on answer
-    selectedChoice.classList.add(classToApply);
-    selectedChoice.classList.remove('ans-btn');
 
-    //function to reset the state and get new question
-       setTimeout(() => {
-        selectedChoice.classList.remove(classToApply);
-        selectedChoice.classList.add('ans-btn');
-        renderQuestion();
+        //set class to change colour depending on aswer chosen
+        selectedChoice.classList.add(classToApply);
+        selectedChoice.classList.remove('ans-btn');
 
-    }, 800);
+        //function to reset the state and render new question
+        setTimeout(() => {
+            selectedChoice.classList.remove(classToApply);
+            selectedChoice.classList.add('ans-btn');
+            renderQuestion();
+
+        }, 800);
+    });
 });
-});
 
-//function to update the score
+//function to update the user score
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
@@ -270,7 +271,7 @@ incrementScore = num => {
     finalScore.innerText = score;
 };
 
-//end quiz section
+//end quiz modal section
 
 // const userScore = localStorage.getItem('userScore');
 const highScores = (JSON.parse(localStorage.getItem('highScores')) || []);
@@ -302,9 +303,9 @@ saveHighScore = e => {
     window.location.assign('index.html');
 };
 
-//replay without saving score
+//replay quiz game without saving score
 
-//event listener when user clicks the play again button
+//event listener when user clicks the pay again button
 playAgainBtn.addEventListener('click', () => {
     $("#play-again-modal").modal({
         backdrop: 'static',
@@ -314,25 +315,26 @@ playAgainBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("hide");
 });
 
-//event listener if user selects yes
+//event listener if user select yes button
 restartYesBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("hide");
     scoreText.innerText = 0;
     startQuiz();
 });
 
-//event listener if user selects no 
+//event listener if user select no button
 restartNoBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("show");
 });
 
+
 /* exit quiz game without finishing or 
-return to home page without saving score after quiz is finished */
+return to home page without saving score after quiz game is finished */
 
 //variable created to use in if function when user selects 'No'
 let clickreturnHomeBtn;
 
-//event listener when user clicks the quit button
+//event listener when user clicks the quit game button
 exitGameButton.addEventListener('click', () => {
     $("#exit-modal").modal({
         backdrop: 'static',
@@ -341,7 +343,7 @@ exitGameButton.addEventListener('click', () => {
     $("#exit-modal").modal("show");
 });
 
-//event listener when user clicks the home button
+//event listener when user clicks the return home button
 returnHomeBtn.addEventListener('click', () => {
     $("#exit-modal").modal({
         backdrop: 'static',
@@ -358,6 +360,7 @@ exitYesBtn.addEventListener('click', () => {
 });
 
 //event listener if user select no button
+//additional if statement added depending which button user has clicked
 exitNoBtn.addEventListener('click', () => {
     if (clickreturnHomeBtn === true) {
         $("#finish-quiz-modal").modal("show");
@@ -366,20 +369,20 @@ exitNoBtn.addEventListener('click', () => {
     }
 });
 
-//highscores section
+//highscores modal section
 
-//highscores added if user saves the score
+//highscores added to the table if user saves the score
 highScoresList.innerHTML = highScores.map(score => {
-    return `<tr>
-<td>${score.name}</td>
-<td>${score.score}</td>
-</tr>`;
-})
-.join('');
+        return `<tr>
+    <td>${score.name}</td>
+    <td>${score.score}</td>
+    </tr>`;
+    })
+    .join('');
 
-//clear highscores section
+//clear highscores modal section
 
-//event listener if selects clear score button
+//event listener once user selects clear score button
 clearBtn.addEventListener('click', () => {
     $("#clear-modal").modal({
         backdrop: 'static',
@@ -389,22 +392,22 @@ clearBtn.addEventListener('click', () => {
     $("#highscores-modal").modal("hide");
 });
 
-//event listener if selects yes to clear score
+//event listener once user selects yes to clear score
 clearYesBtn.addEventListener('click', () => {
     localStorage.clear('highScores');
     highScoresList.style.display = "none";
     $("#highscores-modal").modal("show");
 });
 
-//event listener if selects no to clear score
+//event listener once user selects no to clear score
 clearNoBtn.addEventListener('click', () => {
     $("#highscores-modal").modal("show");
 });
 
-//event listener to start the quiz
+//event listener to start the quiz game once clicked
 playButton.addEventListener('click', startQuiz);
 
-//function to start the quiz
+//function to start the quiz game
 
 function startQuiz() {
 

@@ -5,70 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Health & Safety Quiz to test your knowledge.">
+    <meta name="description" content="A fun quis to test your knowledge on Health & Safety.">
     <meta name="author" content="Paul Bowden">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Health & Safety Quiz</title>
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <title>Health & Safety Quiz</title>
 </head>
 
 <body>
-
+    <!-- Start of Home Section -->
     <section id="home-section">
         <div class="container home-container">
             <div class="row">
                 <div class="col-12">
-                    <h1 id="heading">Health & Safety Quiz</h1>
-                    <p>Test Your Health & Safety Knowledge</p>
+                    <h1 id="heading">
+                        Health & Safety Quiz
+                    </h1>
+                    <p>
+                        Test your knowledge of workplace Heath & Safety?
+                    </p>
                     <div class="controls">
                         <button type="button" id="play-btn" class="btn btn-block btn-hover">Play</button>
                         <button type="button" id="rules-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
                             data-bs-target="#rules-modal">Rules</button>
                         <button type="button" id="highscores-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
                             data-bs-target="#highscores-modal">Highscores</button>
-                            <button type="button" id="highscores-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
+                        <button type="button" id="contact-btn" class="btn btn-block btn-hover" data-bs-toggle="modal"
                             data-bs-target="#contact-modal">Contact</button>
-                        
-                        <footer class="container-fluid text-center">
-                            <ul class="list-inline social-links mt-0">
-                                <li class="list-inline-item">
-                                    <a target="_blank" rel="noopener" href="https://www.facebook.com">
-                                        <i class="fab fa-facebook-square" aria-hidden="true"></i>
-                                        <span class="sr-only">Facebook</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a target="_blank" rel="noopener" href="https://www.twitter.com">
-                                        <i class="fab fa-twitter" aria-hidden="true"></i>
-                                        <span class="sr-only">Twitter</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a target="_blank" rel="noopener" href="https://www.linkedin.com">
-                                        <i class="fab fa-linkedin" aria-hidden="true"></i>
-                                        <span class="sr-only">Linkedin</span>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a target="_blank" rel="noopener" href="https://www.github.com">
-                                        <i class="fab fa-github" aria-hidden="true"></i>
-                                        <span class="sr-only">GitHub</span>
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </footer>
                     </div>
+                    <footer class="container-fluid text-center">
+                        <ul class="list-inline social-links mt-0">
+                            <li class="list-inline-item">
+                                <a target="_blank" rel="noopener" href="https://www.facebook.com">
+                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                    <span class="sr-only">Facebook</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" rel="noopener" href="https://www.twitter.com">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    <span class="sr-only">Twitter</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" rel="noopener" href="https://www.linkedin.com">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    <span class="sr-only">Linkedin</span>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a target="_blank" rel="noopener" href="https://www.github.com">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                    <span class="sr-only">GitHub</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </footer>
+
                 </div>
             </div>
         </div>
     </section>
-    <section id="quiz-section" class="hide">
+    <!-- End of Home Section -->
+    <!-- Start of Quiz Game Section -->
+    <section id="quiz-game-section" class="hide">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -94,15 +100,17 @@
                             <button class="btn ans-btn" data-number="4">4</button>
                         </div>
                     </div>
+                    <hr>
                     <div id="exit-game-section">
                         <button type="button" id="exit-game">Quit Game</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
-    <section id="finish-section">
+    <!-- End of Quiz Game Section -->
+    <!-- Start of Finish Quiz Section Modal -->
+    <section id="finish-quiz-section">
         <div class="modal fade" id="finish-quiz-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -110,11 +118,11 @@
                         <h2>Well Done!</h2>
                     </div>
                     <div class="modal-body">
-                        <p>You have reached the end of the Health & Safety Quiz.</p>
+                        <p>You have reached the end of the quiz.</p>
                         <h4>Total Score:</h4>
                         <h3><span id="final-score">0</span> (out of 200)</h3>
                         <form>
-                            <p>To save the score enter your name:</p>
+                            <p>Enter your name to save the score:</p>
                             <input type="text" name="username" id="username" class="form-control"
                                 placeholder="Enter your name">
                         </form>
@@ -129,7 +137,8 @@
             </div>
         </div>
     </section>
-
+    <!-- End of Finish Quiz Section Modal -->
+    <!-- Start of Return Modal -->
     <section id="exit-section">
         <div class="modal fade" id="exit-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -153,7 +162,9 @@
             </div>
         </div>
     </section>
-    <section id="play-section">
+    <!-- End of Return Home Modal -->
+    <!-- Start of Play Again Modal -->
+    <section id="play-again-section">
         <div class="modal fade" id="play-again-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -162,7 +173,7 @@
                     </div>
                     <div class="modal-body">
                         <p>
-                            Are you sure you want to restart the quiz game?
+                            Are you sure you want to restart the quiz?
                         </p>
                         <p>
                             Any unsaved scores and progress will be lost.
@@ -177,50 +188,54 @@
             </div>
         </div>
     </section>
+    <!-- End of Play Again Modal -->
+    <!-- Start of Rules Section Modal -->
     <section id="rules-section">
         <div class="modal fade" id="rules-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h3 class="text-center">Health & Safety Quiz Rules</h3>
+                        <h2>Health & Safety Quiz Rules</h2>
                     </div>
                     <div class="modal-body">
-                        <p class="text-center">
-                            Answer as many of the questions correctly as you can. The game
-                            will end once all of the questions have been answered.
+                        <p>
+                            Answer as many of the questions as you can. The game will end once all of the questions have
+                            been answered.
                         </p>
-                        <h5>How To Play:</h5>
+                        <h4>How To Play:</h4>
                         <ul>
-                            <li>Press <strong>Play</strong> to start the quiz</li>
-                            <li>Once the game starts, you will be given a question, select one of the 4 options to
-                                answer the question</li>
+                            <li>Press <strong>Play</strong> to start the quiz game</li>
+                            <li>Once the game starts, you will be presented with a question, select one of the 4 options
+                                to answer the question</li>
                             <li>If you answer correctly, the selected answer will turn green, if answered incorrectly
                                 this will turn red</li>
                             <li>For every correct answer, the score will increase by 10 points, incorrect answers get 0
                                 points</li>
-                            <li>Once the question is answered, you will be presented with the next question.</li>
+                            <li>Once the question is answered, you will be presented with the next question, same steps
+                                as above apply</li>
                             <li>Your progress is recorded in the top left</li>
                             <li>You can end the game anytime by selecting <strong>Quit Game</strong></li>
                             <li>Once all the questions have been answered, the quiz game will end</li>
-                            <li>You can save the total score by entering a username and clicking
-                                <strong>Save Score</strong></li>
-                            <li>Click <strong>Play Again</strong> to start the quiz game again</li>
+                            <li>You can save Your score by entering a username and clicking <strong>Save Score</strong>
+                            </li>
+                            <li>Click <strong>Play Again</strong> to start the quiz again</li>
                             <li>Click <strong>Return Home</strong> to go back to the home screen</li>
-                            <li>If you wish to view the highscores table, select
-                                <strong>Highscores</strong></li>
-                            <li>To clear the highscores table, click <strong>Clear
-                                    Scores</strong></li>
+                            <li>To view the highscores table, select <strong>Highscores</strong>, only the top 10
+                                highest scores will be displayed</li>
+                            <li>To clear the highscores table of recorded scores, click <strong>Clear Scores</strong>
+                            </li>
                         </ul>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
-                      </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="scores-section">
+    <!-- End of Rules Section Modal -->
+    <!-- Start of Highscores Section Modal -->
+    <section id="highscores-section">
         <div class="modal fade" id="highscores-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
@@ -246,7 +261,9 @@
             </div>
         </div>
     </section>
-    <section id="clear-section">
+    <!-- End of Highscores Section Modal -->
+    <!-- Start of Clear Scores Modal -->
+    <section id="clear-scores-section">
         <div class="modal fade" id="clear-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -255,20 +272,22 @@
                     </div>
                     <div class="modal-body">
                         <p>
-                            Are you sure you want to clear the highscores?
+                            Are you sure you want to clear all highscores?
                         </p>
                         <p>
                             This action cannot be undone.
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-hover" id="cs-y" data-bs-dismiss="modal">Yes</button>
-                        <button type="button" class="btn btn-hover" id="cs-n" data-bs-dismiss="modal">No</button>
+                        <button type="button" class="btn btn-hover" id="cs-yes" data-bs-dismiss="modal">Yes</button>
+                        <button type="button" class="btn btn-hover" id="cs-no" data-bs-dismiss="modal">No</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End of Clear Scores Modal -->
+
     <section id="contact-section">
         <div class="modal fade" id="contact-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -304,13 +323,16 @@
                 </div>
             </div>
         </div>
-    </section>
-
+    </section>                        
+    <!-- jQuery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <!-- Local Script -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
