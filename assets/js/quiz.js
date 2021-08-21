@@ -1,18 +1,6 @@
 
 const questions = []
 
-fetch(
-    '/questions.json'
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((currentQuestion) => {
-        questions = currentQuestion.results.map((question) => {
-            let currentQuestion = {
-                question: question.question,
-            };
-
 
 
 //variables to select elements
@@ -23,7 +11,7 @@ const quizSection = document.getElementById('quiz-game-section');
 const exitGameButton = document.getElementById('exit-game');
 const exitYesBtn = document.getElementById('exit-yes');
 const exitNoBtn = document.getElementById('exit-no');
-const question = document.getElementById('question')
+const question = document.getElementById('question');
 const answers = Array.from(document.querySelectorAll('.ans-btn'));
 const progressText = document.getElementById('progress-text');
 const scoreText = document.getElementById('score');
@@ -268,5 +256,4 @@ function startQuiz() {
     score = 0;
     availableQuestions = [...questions];
     renderQuestion();
-
 }
