@@ -188,7 +188,7 @@ const clearYesBtn = document.getElementById('cs-yes');
 const clearNoBtn = document.getElementById('cs-no');
 const highScoresList = document.getElementById('high-scores-list');
 
-//variables for quiz game
+//variables for quiz
 
 let currentQuestion = {};
 let acceptingAnswers = true;
@@ -197,3 +197,16 @@ let availableQuestions = [];
 let score = 0;
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 20;
+
+//function for new question
+
+function renderQuestion() {
+
+    //if function to check if quiz ended
+    if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
+        $("#finish-quiz-modal").modal({
+            backdrop: 'static',
+            keyboard: false
+        });
+        return $("#finish-quiz-modal").modal("show");
+    }
