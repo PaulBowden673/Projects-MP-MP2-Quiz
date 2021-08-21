@@ -248,6 +248,8 @@ answers.forEach(ans => {
         if (classToApply === 'btn-correct') {
             incrementScore(SCORE_POINTS);
         }
+    //set class to change colour depending on answer
+    selectedChoice.classList.add(classToApply);
+    selectedChoice.classList.remove('ans-btn');
 
-        
  
