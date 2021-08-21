@@ -310,15 +310,17 @@
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" id="email" class="form-control">
                                 <div id="msg-error" class="text-center"></div>
-                                <label for="message" class="form-label">message</label>
-                                <textarea id="message" class=" form-control"></textarea>
-                                
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" class=" form-control"></textarea>             
+                                <div class="col-md-12 text-center">
+                                <button type="submit" class=" mt-1 btn btn-primary" id='message-button'>Send message</button>
+                                 </div>
                             </form>
                         </div>
 
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary" id='message-button'>Send message</button>
+                        
                         <button type="button" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -335,11 +337,8 @@
     <!-- Local Script -->
     <script src="assets/js/script.js"></script>
     <!-- EmailJS Script-->
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_v1KK8tftAUt8Mjki3Gm8Z");
-        })();
-    </script>
+    <script src="assets/js/email.js"></script>
+    
 </body>
 
 </html>

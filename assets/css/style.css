@@ -172,7 +172,6 @@ a {
     color: black;
 }
 
-
 /* Modal Content Styles */
 
 .modal-content {
@@ -235,7 +234,6 @@ tbody {
     font-weight: 600;
     font-size: 20px;
 }
-
 /* Media Queries */
     @media (max-width: 646px) {
         #home-section p {
