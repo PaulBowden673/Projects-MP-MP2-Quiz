@@ -301,3 +301,15 @@ saveHighScore = e => {
     localStorage.setItem('highScores', JSON.stringify(highScores));
     window.location.assign('index.html');
 };
+
+//replay without saving score
+
+//event listener when user clicks the play again button
+playAgainBtn.addEventListener('click', () => {
+    $("#play-again-modal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    $("#play-again-modal").modal("show");
+    $("#finish-quiz-modal").modal("hide");
+});
