@@ -341,3 +341,13 @@ exitGameButton.addEventListener('click', () => {
     $("#exit-modal").modal("show");
 });
 
+//event listener when user clicks the home button
+returnHomeBtn.addEventListener('click', () => {
+    $("#exit-modal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    $("#exit-modal").modal("show");
+    $("#finish-quiz-modal").modal("hide");
+    clickreturnHomeBtn = true;
+});
