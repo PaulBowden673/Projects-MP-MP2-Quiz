@@ -221,4 +221,15 @@ function renderQuestion() {
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
+     //function to assign answer boxes with relevant options that correspond to the correct question
+     answers.forEach(ans => {
+        const number = ans.dataset['number'];
+        ans.innerText = currentQuestion['ans' + number];
+    });
+
+    availableQuestions.splice(questionsIndex, 1);
+
+    acceptingAnswers = true;
+}
+
  
