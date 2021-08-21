@@ -12,8 +12,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Email JS-->
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+ 
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Health & Safety Quiz</title>
@@ -302,20 +301,23 @@
                             enjoyed or didn't enjoy and we'll factor your feedback into our future releases.
                         </p>
                         <div class="mb-2">
-                            <form id="contact-form" onsubmit="return validateForm()" name="contactForm" novalidate>
-                                <div id="name-error" class="text-center"></div>
-                                <label for="fromName" class="form-label">Name</label>
-                                <input type="text" id="fromName" class="form-control">
-                                <div id="email-error" class="text-center"></div>
-                                <label for="email" class="form-label">Email address</label>
-                                <input type="email" id="email" class="form-control">
-                                <div id="msg-error" class="text-center"></div>
-                                <label for="message" class="form-label">Message</label>
-                                <textarea id="message" class=" form-control"></textarea>             
-                                <div class="col-md-12 text-center">
-                                <button type="submit" class=" mt-1 btn btn-primary" id='message-button'>Send message</button>
-                                 </div>
-                            </form>
+                            <form id="form">
+                                <div class="field">
+                                  <label for="from_name">Name</label>
+                                  <input type="text" class="form-control" name="from_name" id="from_name">
+                                </div>
+                                <div class="field">
+                                    <label for="from_email">Email address</label>
+                                    <input type="email" class="form-control" name="from_email" id="from_email">
+                                  </div>
+                                <div class="field">
+                                  <label for="message">Message</label>
+                                  <textarea type="text" class="form-control" name="message" id="message"></textarea>
+                                </div>                         
+                              <div class=" d-flex justify-content-center ">
+                                <input type="submit" id="button" class="btn btn-primary mt-1" value="Send Email" >
+                              </div>
+                              </form>
                         </div>
 
                     </div>
@@ -328,17 +330,27 @@
         </div>
     </section>
     <!-- jQuery Script -->
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+        
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- Local Script -->
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/emailJS.js"></script>
     <!-- EmailJS Script-->
-    <script src="assets/js/email.js"></script>
-    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_v1KK8tftAUt8Mjki3Gm8Z");
+    })();
+    </script>
+
+
 </body>
 
 </html>
