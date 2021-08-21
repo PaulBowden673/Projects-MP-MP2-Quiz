@@ -388,3 +388,15 @@ clearBtn.addEventListener('click', () => {
     $("#clear-modal").modal("show");
     $("#highscores-modal").modal("hide");
 });
+
+//event listener if selects yes to clear score
+clearYesBtn.addEventListener('click', () => {
+    localStorage.clear('highScores');
+    highScoresList.style.display = "none";
+    $("#highscores-modal").modal("show");
+});
+
+//event listener if selects no to clear score
+clearNoBtn.addEventListener('click', () => {
+    $("#highscores-modal").modal("show");
+});
