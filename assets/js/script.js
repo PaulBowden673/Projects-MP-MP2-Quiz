@@ -162,3 +162,28 @@ const questions = [{
     correct: "3"
 }
 ];
+
+//variables to select elements
+
+const playButton = document.getElementById('play-btn');
+const homeSection = document.getElementById('home-section');
+const quizSection = document.getElementById('quiz-game-section');
+const exitGameButton = document.getElementById('exit-game');
+const exitYesBtn = document.getElementById('exit-yes');
+const exitNoBtn = document.getElementById('exit-no');
+const question = document.getElementById('question');
+const answers = Array.from(document.querySelectorAll('.ans-btn'));
+const progressText = document.getElementById('progress-text');
+const scoreText = document.getElementById('score');
+const progressBarFull = document.getElementById('progress-bar-full');
+const username = document.getElementById('username');
+const saveScoreBtn = document.getElementById('save-score');
+const finalScore = document.getElementById('final-score');
+const playAgainBtn = document.getElementById('play-again');
+const returnHomeBtn = document.getElementById('return-home');
+const restartYesBtn = document.getElementById('restart-yes');
+const restartNoBtn = document.getElementById('restart-no');
+const clearBtn = document.getElementById('clear-scores');
+const clearYesBtn = document.getElementById('cs-yes');
+const clearNoBtn = document.getElementById('cs-no');
+const highScoresList = document.getElementById('high-scores-list');
