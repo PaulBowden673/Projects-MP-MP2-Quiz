@@ -248,8 +248,18 @@ answers.forEach(ans => {
         if (classToApply === 'btn-correct') {
             incrementScore(SCORE_POINTS);
         }
-    //set class to change colour depending on answer
+    //set class to change color depending on answer
     selectedChoice.classList.add(classToApply);
     selectedChoice.classList.remove('ans-btn');
+
+    //function to reset the state and get new question
+       setTimeout(() => {
+        selectedChoice.classList.remove(classToApply);
+        selectedChoice.classList.add('ans-btn');
+        renderQuestion();
+
+    }, 800);
+});
+});
 
  
