@@ -400,3 +400,19 @@ clearYesBtn.addEventListener('click', () => {
 clearNoBtn.addEventListener('click', () => {
     $("#highscores-modal").modal("show");
 });
+
+//event listener to start the quiz
+playButton.addEventListener('click', startQuiz);
+
+//function to start the quiz
+
+function startQuiz() {
+
+    homeSection.classList.add('hide');
+    quizSection.classList.remove('hide');
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    renderQuestion();
+
+}
