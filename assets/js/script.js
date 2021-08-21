@@ -376,3 +376,15 @@ highScoresList.innerHTML = highScores.map(score => {
 </tr>`;
 })
 .join('');
+
+//clear highscores section
+
+//event listener if selects clear score button
+clearBtn.addEventListener('click', () => {
+    $("#clear-modal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    $("#clear-modal").modal("show");
+    $("#highscores-modal").modal("hide");
+});
