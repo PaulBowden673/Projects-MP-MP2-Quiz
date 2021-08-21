@@ -262,4 +262,12 @@ answers.forEach(ans => {
 });
 });
 
+//function to update the score
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+
+    finalScore.innerText = score;
+};
+
  
