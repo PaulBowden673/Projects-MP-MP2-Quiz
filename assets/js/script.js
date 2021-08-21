@@ -326,3 +326,18 @@ restartNoBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("show");
 });
 
+/* exit quiz game without finishing or 
+return to home page without saving score after quiz is finished */
+
+//variable created to use in if function when user selects 'No'
+let clickreturnHomeBtn;
+
+//event listener when user clicks the quit button
+exitGameButton.addEventListener('click', () => {
+    $("#exit-modal").modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    $("#exit-modal").modal("show");
+});
+
