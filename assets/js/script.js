@@ -365,3 +365,14 @@ exitNoBtn.addEventListener('click', () => {
         $("#exit-modal").modal("hide");
     }
 });
+
+//highscores section
+
+//highscores added if user saves the score
+highScoresList.innerHTML = highScores.map(score => {
+    return `<tr>
+<td>${score.name}</td>
+<td>${score.score}</td>
+</tr>`;
+})
+.join('');
