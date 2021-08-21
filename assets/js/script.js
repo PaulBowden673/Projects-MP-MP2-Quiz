@@ -351,3 +351,17 @@ returnHomeBtn.addEventListener('click', () => {
     $("#finish-quiz-modal").modal("hide");
     clickreturnHomeBtn = true;
 });
+
+//event listener if user select yes button
+exitYesBtn.addEventListener('click', () => {
+    window.location.assign('index.html');
+});
+
+//event listener if user select no button
+exitNoBtn.addEventListener('click', () => {
+    if (clickreturnHomeBtn === true) {
+        $("#finish-quiz-modal").modal("show");
+    } else {
+        $("#exit-modal").modal("hide");
+    }
+});
