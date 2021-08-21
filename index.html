@@ -10,10 +10,12 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- Email JS-->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <title>Health & Safety Quiz</title>
 </head>
 
@@ -287,7 +289,7 @@
         </div>
     </section>
     <!-- End of Clear Scores Modal -->
-
+    <!-- Conatact Section -->
     <section id="contact-section">
         <div class="modal fade" id="contact-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -296,34 +298,33 @@
                         <h2 class="text-center">Contact us</h2>
                     </div>
                     <div class="modal-body">
-                        <p class="text-center">We would love to hear your feedback about the quiz. Let us know what you enjoyed or didn't enjoy and we'll factor your feedback into our future releases.
+                        <p class="text-center">We would love to hear your feedback about the quiz. Let us know what you
+                            enjoyed or didn't enjoy and we'll factor your feedback into our future releases.
                         </p>
                         <div class="mb-2">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="name" class="form-control" id="name">
-                          </div>
-                        <div class="mb-2">
-                            <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>
-                         
-                          <div class="mb-2">
-                            <label for="comments" class="form-label">Comments</label>
-                            <textarea class="form-control" id="comments" style="height: 50px"></textarea>
-                           
-                          </div>
+                            <form id="contact-form" onsubmit="return validateForm()" name="contactForm" novalidate>
+                                <div id="name-error" class="text-center"></div>
+                                <label for="fromName" class="form-label">Name</label>
+                                <input type="text" id="fromName" class="form-control">
+                                <div id="email-error" class="text-center"></div>
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" id="email" class="form-control">
+                                <div id="msg-error" class="text-center"></div>
+                                <label for="message" class="form-label">message</label>
+                                <textarea id="message" class=" form-control"></textarea>
+                                
+                            </form>
+                        </div>
 
-                          <button type="submit" id="c-s" class="btn btn-primary">Submit</button>
-                        </form>  
                     </div>
                     <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" id='message-button'>Send message</button>
                         <button type="button" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>                        
+    </section>
     <!-- jQuery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -333,6 +334,12 @@
     </script>
     <!-- Local Script -->
     <script src="assets/js/script.js"></script>
+    <!-- EmailJS Script-->
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_v1KK8tftAUt8Mjki3Gm8Z");
+        })();
+    </script>
 </body>
 
 </html>
