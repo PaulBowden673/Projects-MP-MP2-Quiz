@@ -210,3 +210,9 @@ function renderQuestion() {
         });
         return $("#finish-quiz-modal").modal("show");
     }
+
+     //questions counter increases which updates the progress bar and text
+     questionCounter++;
+     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
+     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
+ 
