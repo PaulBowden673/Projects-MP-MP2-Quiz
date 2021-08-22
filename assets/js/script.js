@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // Array of questions
 const questions = [{
     question: "What does COSHH stand for?",
