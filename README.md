@@ -1,4 +1,4 @@
-<a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" target="_blank">Click  here</a> to access the site.
+<a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" rel="nofollow" target="_blank">Click  here</a> to access the site.
 
 **I built this website to give users a fun and enjoyable game to play. I based the game on Health & Safety questions so it can also be used for training**
 ## UX ##
@@ -36,7 +36,7 @@
 
 1. As a frequent visitor, I want to still find the game enjoyable and challenging.
 2. As a frequent visitor, I want to be able to try to beat the highest scores.
-3. As a Freequent visitor, I want to be able to give feedback on the quiz.
+3. As a frequent visitor, I want to be able to give feedback on the quiz.
 
 ## Design
     
@@ -48,24 +48,25 @@
    
    ### Imagery
 
-- Background image taken from Pexels. Photo by Ash @ModernAfflatus
+- Background image taken from Pexels.com. Photo by Ash @ModernAfflatus
+- 404 page image taken from flaticon.com
 
 
 ## Wireframe Mock-ups 
 These can be found at the following links 
 
-- [Wireframe 3 screen sizes]()
+- [Wireframe 3 screen sizes](/https://paulbowden673.github.io/Projects-MP-MP2-Quiz/assets/documents/wireframes/milestoneProject2Quiz.pdf)
 
 ## Features
 - Responsive on all screen sizes
 - Interactive elements 
 ### [Home Page](Https://github.com/PaulBowden673/Projects-MP-MP2/index.html)
 - Navigation links for the Home page and Conact page.
-- Buttons to view the rules and highscores, resart the game and clear the high scores list.
-- 
+- Buttons to view the rules and highscores, restart the game and clear the high scores list.
+- Contact button to allow users to send feedback via EmailJS API
 
-### [Contact Page](Https://github.com/PaulBowden673/Projects-MP-MP2/contact.html)
- - Form to send feedback to the website owner
+### [404 Page](Https://github.com/PaulBowden673/Projects-MP-MP2/quiz404.html)
+ - 404 Error page to direct user back to the home page.
  - Links to social media pages
 
 
@@ -74,25 +75,25 @@ These can be found at the following links
 ### Languages 
  -  [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)  - This was used for the layout of the website.
  -  [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)    - This was used to style the website.
+ - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - THis was used to make the website interactive and make the quiz work.
 ### Libraries 
  - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) -  This was used to design a mobile-first responsive website layout quickly, also using components ( navigation bar, modal, form, footer)
- - [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - This was used to make the website interactive and make the game work.
-### Tools
+ ### Tools
  - [Google Fonts](https://fonts.google.com/) - This was used for selecting the fonts for the website. 
  - [amiresponsive](http://ami.responsivedesign.is/) - This was used to check how responsive the site is on different devices.
  - [Gitpod](https://www.gitpod.io/) - Online IDE linked to GitHub repository, this was used to write my code.
  - [GitHub](https://github.com/) - This was used to store, host and deploy the project files, after being pushed from Gitpod.
  - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - This was used to audit My site for quality and to check responsiveness. 
-
+- [EmailJS](https://www.emailjs.com/) - This was used to send emails to the owner from the contact form contained in the quiz.
 ## Future updates
 
 - Fetch questions from JSON file to allow questions to be changed without changing the code - struggled to be able to impliment this at this time.
 - Change the qustions so the answers are in a random order to avoid regular users knowing where the answers will be
-- Add more questions to give a better experience for returning users
+- Add more questions in  random order to give a better experience for returning users
 - Add futher sets of questions to make the game more challenging, such as Food Safety, Fire Safety, Licensing.
 
 ## Testing
- I have thoroughly tested this website and was unable to find any broken links within it. I have also tried to submit blank contact forms and forms with incorrect email addresses which gave me an error message on each field to show that the required attribute within my form is working as it should.
+ I have thoroughly tested this website and was unable to find any broken links within it. I have also tried to submit blank contact forms and forms with incorrect email addresses which gave me an error message by way of alert box when thhe emial was sent.
  
  ### Testing User Stories from UX section
 User stories from the UX section were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals. 
@@ -101,19 +102,21 @@ User stories from the UX section were tested to ensure that they all work as int
 1. As a first time Visitor, I want to easily understand the purpose of the site and how to play the game.
     1. On entering the site, the user is presented with a clean website detailing the purpose of the site and giving instructions on how to play the game after clicking on the rules button.  
 2. As a first time visitor, I want to find the game enjoyable and challenging.
-    1. . 
+    1. . On entering the website the user is presented with several buttons - Play, Rules, Highscores and Contact. THe user can then easily choose to play or to review the other options presented.
  
  #### Returning Visitor
 1.  As a returning visitor, I want to still find the game enjoyable and challenging. 
-    1.  
+    1.  The questions are displayed in a random order everytime the game is started.
 2.  As a returning visitor, I want to be able to give feedback to the website owner and suggest improvements or ideas.
-    1. 
+    1. The contact button takes the user from the home screen to blank email form for them to complete with name, email address and message. Upon clicking send email, the email is sent via EmailJS to the site owner.
 
 #### Frequent Visitor
 1. As a frequent visitor,  I want to still find the game enjoyable and challenging.
-    1. 
-2. As a frequent visitor, 
-    1. 
+    1. The questions are presented in a random order everytime the game is played.
+2. As a frequent visitor,  I want to be able to try to beat the highest scores.
+    1. The user can display the current table of high scores ( the scores are only saved locally on the same device previously used)
+3. As a frequent visitor, I want to be able to give feedback on the quiz.
+    1. The contact button takes the user from the home screen to blank email form for them to complete with name, email address and message. Upon clicking send email, the email is sent via EmailJS to the site owner.
     
 #### Devices
 - Samsung S9
@@ -131,7 +134,7 @@ User stories from the UX section were tested to ensure that they all work as int
 
 ### Validation
 All files passed validation testing at 
-- [HTML]
+- [HTML] 
 ![HTML Validation]
 - [CSS]
 
