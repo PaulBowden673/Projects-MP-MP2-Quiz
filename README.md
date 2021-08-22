@@ -135,8 +135,16 @@ User stories from the UX section were tested to ensure that they all work as int
 - Firefox
 - Safari 
 ## Issues/Bugs
-- Issue with game not starting when play button pressed - resolved by 
-- Issue with Merchandise cards not displaying across the width of viewport on 2056px monitor - this was resolved by removing the Bootstrap div.row tag around the card-group.
+
+- The score was showing the previous game score rather than the current game score. After investigation, I identified that the issue was in the script.js file. Once the game had ended the score was set to the local storage. The finalScore variable was then set to get the score from the local storage, this was getting the wrong score. To resolve the issue, I put the finalScore variable in the function that increments the score during the quiz and set it to return that score.After testing this more the issue was resolved.
+
+- During testing I identified an issue in the main Quiz Game section. In the script.js file, any correct or incorrect answers selected by the user would have the relevant style class applied to change the colour, once the answer was selected, the answer button did not change to the relevant colour, instead the surrounding area in between the buttons would have the style class applied to change the colour. I identified that the style class was being applied to the parent element of the answer button which is the div containing all the answer buttons. The style class was applied to the div rather than the answer buttons. To fix the issue, I changed the code in the script.js to ensure the style class is applied to the answer buttons. Further testing was completed, and the answer buttons now correctly have the style applied.
+
+- An additional issue was identified within the main Quiz Game section. The answer buttons have a hover style applied, once the user selects the answer and the new class style is applied for correct or incorrect answer, the hover style was still in effect. if the user was still hovering over the answer button, they were not able to see whether the answer was correct or incorrect. This affected the UX of the quiz. To resolve the issue, I added additional style classes to separate the answer buttons from the other buttons. Then I added additional code in the script.js, when the user selects the answer the hover style would be removed from the button and the correct/incorrect style class applied. The hover style is now removed, and they are able to view whether the answer is correct or incorrect.
+
+- During testing an issue was found with the finish quiz modal that pops up once user has finished the game. The default behaviour for a modal is to close if mouse is clicked outside of the modal or if 'esc' is pressed on keyboard. This was causing an issue as the user was able to close the finish quiz modal and return back to the quiz game section. However, they would not be able to view the finish quiz modal again, and all the progress would be lost. The only way to exit the game would be to reload the webpage or select the 'Quit Game' button and return to the Home page. This identified issue would reduce the UX and functionality of the end game section. To resolve this issue, I added additional code to the script.js for the finish quiz modal as well as confirmation modals. This has improved the overall UX of the quiz game. Once the user is presented with the finish quiz modal, they can no longer close this without selecting one of the provided buttons. The user is also not able to close the additional confirmation modal without selecting one of the options. 
+
+- On mobile devices, a UX issue was identified with the hover style. Once the user clicked the button to select their answer, the answer would have the correct class applied to change colour. However, once the next question was presented the hover style was still applied to the last selected button. To resolve this issue, I added a media query for hover: none. Now, when the user selects the answer buttons on mobile devices the hover effect won't be in place to distract from the answer buttons selected when the next question appears. The answer buttons are now displayed all in the same colour and will change only upon the user selecting the correct or incorrect answer.
 
 ### Validation
 All files passed validation testing at 
@@ -144,8 +152,9 @@ All files passed validation testing at
 
 
 - [HTML] - Issue with empty heading id=Progress-text due to it being filled by javascript during game to show progress.
+
  ###### HTML index.html page
- 
+
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20index.html.png)
   
   ###### HTML 404.html page
@@ -209,6 +218,7 @@ The project was deployed at GitHub Pages using the following steps
 ### Forking the GitHub Repository
 
 Forking the repository will make a copy of the original repository, to view or make changes without affecting the original repository using the following steps
+
 1. Log in to GitHub and locate the repository named PaulBowden673/Projects-Mp-MP2
 2. At the top of the Repository, above the 'Settings' button on the menu, locate the 'Fork' button.
 3. You should now have a copy of the original repository in your GitHub account.
@@ -231,7 +241,8 @@ Forking the repository will make a copy of the original repository, to view or m
 
 
 ## Acknowledgements
+
 - [Code Institute](https://www.codeinstitute.net/)
 - Newcastle College
-- Bootstrap - framework
----
+- Bootstrap framework
+
