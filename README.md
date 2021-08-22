@@ -135,6 +135,8 @@ User stories from the UX section were tested to ensure that they all work as int
 - Firefox
 - Safari 
 ## Issues/Bugs
+- Issue with game not starting when play button pressed - resolved by 
+- Issue with Merchandise cards not displaying across the width of viewport on 2056px monitor - this was resolved by removing the Bootstrap div.row tag around the card-group.
 
 ### Validation
 All files passed validation testing at 
