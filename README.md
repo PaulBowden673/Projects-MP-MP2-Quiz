@@ -1,5 +1,5 @@
 
-https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png
+![Health & Safety Quiz Mockup](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png)
 
 
 
