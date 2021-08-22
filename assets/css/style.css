@@ -6,13 +6,12 @@
     border: none;
 }
 
-
 body {
     font-family: 'Merriweather Sans', sans-serif;
     background-color: black;
     color: #fff;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
@@ -20,7 +19,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    
 }
 
 .btn {
@@ -52,7 +50,7 @@ a {
     font-size: 18px;
 }
 
-/* Home Section Styles */
+/* Home Section */
 
 #home-section {
     background-color: black;
@@ -91,7 +89,7 @@ a {
     font-size: 18px;
 }
 
-/* Start Quiz Section Styles */
+/* Start Quiz Section */
 
 #quiz-game-section {
     background-color: black;
@@ -176,7 +174,7 @@ a {
     color: black;
 }
 
-/* Modal Content Styles */
+/* Modal Content */
 
 .modal-content {
     background-color: black;
@@ -190,7 +188,7 @@ a {
 
 .modal-footer {
     padding-top: 1px;
-    padding-bottom:1px;
+    padding-bottom: 1px;
 }
 
 h2 {
@@ -214,6 +212,7 @@ strong {
     color: red;
     text-transform: uppercase;
 }
+
 li {
     font-size: 14px;
 }
@@ -240,20 +239,20 @@ tbody {
 }
 
 /* Media Queries */
-    @media (max-width: 646px) {
-        #home-section p {
+@media (max-width: 646px) {
+    #home-section p {
         font-size: 15px;
     }
 }
 
-    @media (max-width: 474px) {
-        #heading {
+@media (max-width: 474px) {
+    #heading {
         font-size: 2.8rem;
     }
 }
 
-    @media (max-width: 320px) {
-        #heading {
+@media (max-width: 320px) {
+    #heading {
         font-size: 2.5rem;
     }
 
@@ -363,8 +362,6 @@ tbody {
             font-size: 1.2rem;
         }
     }
-
-    /* Finish Quiz Section Modal */
 
     @media (max-width: 420px) {
         #finish-section h2 {

@@ -41,7 +41,7 @@
 ## Design
     
    ### Colour Scheme
-   - The 3 main colours used on the site are Black, Blue and Red which are appropriate.
+   - The 3 main colours used on the site are Black, #571ce0 Blue and Red which are appropriate.
    ### Typography
    - The Roboto font is the main font used throughout the whole site, with sans-serif as fallback in case the font does not load correctly. It is frequently used and easy to read. 
    - The Merriweather Sans font is used for headings throughout the site, with sans-serif fallback in case the font does not load correctly, it is optimised for a bold display on modern web browsers. 
@@ -86,8 +86,9 @@ These can be found at the following links
 
 ## Future updates
 
+- Fetch questions from JSON file to allow questions to be changed without changing the code - struggled to be able to impliment this at this time.
 - Change the qustions so the answers are in a random order to avoid regular users knowing where the answers will be
-- Add more quations to give a better experience for returning users
+- Add more questions to give a better experience for returning users
 - Add futher sets of questions to make the game more challenging, such as Food Safety, Fire Safety, Licensing.
 
 ## Testing

@@ -1,6 +1,4 @@
-
-
-// Array with list of quiz questions
+// Array of questions
 const questions = [{
     question: "What does COSHH stand for?",
     ans1: "Control of Substances Hazardous to Health",
@@ -198,11 +196,11 @@ let score = 0;
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 20;
 
-//function to render new question
+//function for new question
 
 function renderQuestion() {
 
-    //if function to check if the game has ended
+    //function to check if the game has ended
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         $("#finish-quiz-modal").modal({
             backdrop: 'static',
@@ -211,7 +209,7 @@ function renderQuestion() {
         return $("#finish-quiz-modal").modal("show");
     }
 
-    //questions counter increases which updates the progress bar and text
+    //questions counter increases updates the progress bar and text
     questionCounter++;
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
     progressBarFull.style.width = `${(questionCounter/MAX_QUESTIONS) * 100}%`;
@@ -221,7 +219,7 @@ function renderQuestion() {
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
 
-    //function to assign answer boxes with relevant options that correspond to the correct question
+    //function to assign answer boxes that correspond to the correct question
     answers.forEach(ans => {
         const number = ans.dataset['number'];
         ans.innerText = currentQuestion['ans' + number];
@@ -232,7 +230,7 @@ function renderQuestion() {
     acceptingAnswers = true;
 }
 
-//function to check which answer the user has chose
+//function to check which answer the user has chosen
 answers.forEach(ans => {
     ans.addEventListener('click', e => {
         if (!acceptingAnswers) return;
@@ -241,19 +239,19 @@ answers.forEach(ans => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        //check if answer is correct or not and set the class
+        //check if answer is correct and set the class
         let classToApply = selectedAnswer == currentQuestion.correct ? 'btn-correct' : 'btn-incorrect';
 
-        //if correct answer chosen then increase score
+        //if correct answer increase score
         if (classToApply === 'btn-correct') {
             incrementScore(SCORE_POINTS);
         }
 
-        //set class to change colour depending on aswer chosen
+        //set class to change color for answer 
         selectedChoice.classList.add(classToApply);
         selectedChoice.classList.remove('ans-btn');
 
-        //function to reset the state and render new question
+        //function to reset get new question
         setTimeout(() => {
             selectedChoice.classList.remove(classToApply);
             selectedChoice.classList.add('ans-btn');
@@ -263,7 +261,7 @@ answers.forEach(ans => {
     });
 });
 
-//function to update the user score
+//function to update score
 incrementScore = num => {
     score += num;
     scoreText.innerText = score;
@@ -305,7 +303,7 @@ saveHighScore = e => {
 
 //replay quiz game without saving score
 
-//event listener when user clicks the pay again button
+//event listener when user clicks the play again button
 playAgainBtn.addEventListener('click', () => {
     $("#play-again-modal").modal({
         backdrop: 'static',
@@ -329,9 +327,9 @@ restartNoBtn.addEventListener('click', () => {
 
 
 /* exit quiz game without finishing or 
-return to home page without saving score after quiz game is finished */
+return to home page without saving score after quiz is finished */
 
-//variable created to use in if function when user selects 'No'
+//variable created to use function when user selects 'No'
 let clickreturnHomeBtn;
 
 //event listener when user clicks the quit game button
@@ -360,7 +358,6 @@ exitYesBtn.addEventListener('click', () => {
 });
 
 //event listener if user select no button
-//additional if statement added depending which button user has clicked
 exitNoBtn.addEventListener('click', () => {
     if (clickreturnHomeBtn === true) {
         $("#finish-quiz-modal").modal("show");
@@ -392,22 +389,22 @@ clearBtn.addEventListener('click', () => {
     $("#highscores-modal").modal("hide");
 });
 
-//event listener once user selects yes to clear score
+//event listener if user selects yes to clear score
 clearYesBtn.addEventListener('click', () => {
     localStorage.clear('highScores');
     highScoresList.style.display = "none";
     $("#highscores-modal").modal("show");
 });
 
-//event listener once user selects no to clear score
+//event listener if user selects no to clear score
 clearNoBtn.addEventListener('click', () => {
     $("#highscores-modal").modal("show");
 });
 
-//event listener to start the quiz game once clicked
+//event listener to start the quiz 
 playButton.addEventListener('click', startQuiz);
 
-//function to start the quiz game
+//function to start the quiz 
 
 function startQuiz() {
 

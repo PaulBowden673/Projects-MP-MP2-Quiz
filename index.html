@@ -10,16 +10,16 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FontAwesome -->
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
- 
+    <!-- Local CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Health & Safety Quiz</title>
 </head>
 
 <body>
-    <!-- Start of Home Section -->
+    <!-- Home Section -->
     <section id="home-section">
         <div class="container home-container">
             <div class="row">
@@ -73,8 +73,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Home Section -->
-    <!-- Start of Quiz Game Section -->
+    <!-- Quiz Section -->
     <section id="quiz-game-section" class="hide">
         <div class="container">
             <div class="row">
@@ -109,8 +108,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Quiz Game Section -->
-    <!-- Start of Finish Quiz Section Modal -->
+    <!-- Finish Quiz Section Modal -->
     <section id="finish-quiz-section">
         <div class="modal fade" id="finish-quiz-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -138,8 +136,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Finish Quiz Section Modal -->
-    <!-- Start of Return Modal -->
+    <!-- Return Section Modal -->
     <section id="exit-section">
         <div class="modal fade" id="exit-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -163,8 +160,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Return Home Modal -->
-    <!-- Start of Play Again Modal -->
+    <!-- Play Again Modal -->
     <section id="play-again-section">
         <div class="modal fade" id="play-again-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -189,8 +185,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Play Again Modal -->
-    <!-- Start of Rules Section Modal -->
+    <!-- Rules Section Modal -->
     <section id="rules-section">
         <div class="modal fade" id="rules-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -234,8 +229,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Rules Section Modal -->
-    <!-- Start of Highscores Section Modal -->
+    <!-- Highscores Section Modal -->
     <section id="highscores-section">
         <div class="modal fade" id="highscores-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -262,8 +256,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Highscores Section Modal -->
-    <!-- Start of Clear Scores Modal -->
+    <!-- Clear Scores Modal -->
     <section id="clear-scores-section">
         <div class="modal fade" id="clear-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog">
@@ -287,8 +280,7 @@
             </div>
         </div>
     </section>
-    <!-- End of Clear Scores Modal -->
-    <!-- Conatact Section -->
+    <!-- Contact Section -->
     <section id="contact-section">
         <div class="modal fade" id="contact-modal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg">
@@ -303,26 +295,26 @@
                         <div class="mb-2">
                             <form id="form">
                                 <div class="field">
-                                  <label for="from_name">Name</label>
-                                  <input type="text" class="form-control" name="from_name" id="from_name">
+                                    <label for="from_name">Name</label>
+                                    <input type="text" class="form-control" name="from_name" id="from_name">
                                 </div>
                                 <div class="field">
                                     <label for="from_email">Email address</label>
                                     <input type="email" class="form-control" name="from_email" id="from_email">
-                                  </div>
+                                </div>
                                 <div class="field">
-                                  <label for="message">Message</label>
-                                  <textarea type="text" class="form-control" name="message" id="message"></textarea>
-                                </div>                         
-                              <div class=" d-flex justify-content-center ">
-                                <input type="submit" id="button" class="btn btn-primary mt-1" value="Send Email" >
-                              </div>
-                              </form>
+                                    <label for="message">Message</label>
+                                    <textarea type="text" class="form-control" name="message" id="message"></textarea>
+                                </div>
+                                <div class=" d-flex justify-content-center ">
+                                    <input type="submit" id="button" class="btn btn-primary mt-1" value="Send Email">
+                                </div>
+                            </form>
                         </div>
 
                     </div>
                     <div class="modal-footer">
-                        
+
                         <button type="button" class="btn btn-hover" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -330,27 +322,22 @@
         </div>
     </section>
     <!-- jQuery Script -->
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
-        
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Bootstrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- Local Script -->
-    <script src="assets/js/quiz.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/emailJS.js"></script>
     <!-- EmailJS Script-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
-    (function() {
-    emailjs.init("user_v1KK8tftAUt8Mjki3Gm8Z");
-    })();
+        (function () {
+            emailjs.init("user_v1KK8tftAUt8Mjki3Gm8Z");
+        })();
     </script>
-
-
 </body>
 
 </html>
