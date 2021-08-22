@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const btn = document.getElementById('button');
 
 document.getElementById('form')
