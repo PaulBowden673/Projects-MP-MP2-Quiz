@@ -46,8 +46,18 @@ strong {
     color: red;
 }
 
+
 a {
+    color: #571ce0;
     font-size: 18px;
+}
+a:hover {
+    color: #ffbb59;
+    cursor: pointer;
+}
+
+.fa-exclamation-triangle {
+    color: #ffbb59;
 }
 
 /* Home Section */
@@ -179,6 +189,7 @@ a {
 .modal-content {
     background-color: black;
     border: 1px solid #fff;
+    border-radius: 3%;
 }
 
 .modal-footer .btn {
