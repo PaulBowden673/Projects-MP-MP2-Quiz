@@ -1,3 +1,8 @@
+
+https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png
+
+
+
 <a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" rel="nofollow" target="_blank">Click  here</a> to access the site.
 
 **I built this website to give users a fun and enjoyable game to play. I based the game on Health & Safety questions so it can also be used for training**
