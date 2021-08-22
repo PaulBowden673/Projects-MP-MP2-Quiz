@@ -138,53 +138,53 @@ All files passed validation testing at
 
 
 - [HTML]
- HTML index.html page
+ ######HTML index.html page
  
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20index.html.png)
   
-  HTML 404.html page
+  ######HTML 404.html page
   
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20quiz404.html.png)
 
 - [CSS] - Issue with validating with Bootstrap. When validated as Direct Input no issues were found
 
- CSS Style.css 
+ ####CSS Style.css 
  
- By URL
+ ######By URL
  
   ![CSS Validation style.css](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style.css.png)
   
-  By Direct Input
+  ######By Direct Input
   
   ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style.css%20Direct%20Input.png)
 
-  CSS 404Style.css
+  ####CSS 404Style.css
   
-  By URL
+  ######By URL
   
   ![CSS Validation quiz404.css](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style404.css.png)
 
-  By Direct Input
+  ######By Direct Input
  
   ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style404.css%20Direct%20Input.png)
 
+- [Lighthouse]
 
-
- Lighthouse Validation Desktop
+ ######Lighthouse Validation Desktop
  
 ![Lighthouse Validation Desktop](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/Lightouse%20Report%20Desktop%20MP2%20Quiz.png)
 
-Lighthouse Validation Mobile
+######Lighthouse Validation Mobile
 
 ![Lighthouse Validation Mobile](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/Lighthouse%20Report%20Mobile%20MP2%20Quiz.png)
 
-JsHint Validation Report
+- [JSHint]
 
-Script.js
+######Script.js
 
 ![jsHint Validation Report](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/JSHint%20validation%20script.js.png)
 
-EmailJS.js
+######EmailJS.js
 
 ![jsHint Validation Report EmailJS.js](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/JSHint%20validation%20emailJS.js.png)
 ## Deployment 
