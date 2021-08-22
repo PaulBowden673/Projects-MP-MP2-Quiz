@@ -62,33 +62,43 @@ These can be found at the following links
 - [Wireframe 3 screen sizes](/https://paulbowden673.github.io/Projects-MP-MP2-Quiz/assets/documents/wireframes/milestoneProject2Quiz.pdf)
 
 ## Features
+
 - Responsive on all screen sizes
 - Interactive elements 
+
 ### [Home Page](Https://github.com/PaulBowden673/Projects-MP-MP2/index.html)
+
 - Navigation links for the Home page and Contact page.
 - Buttons to view the rules and highscores, restart the game and clear the high scores list.
 - Contact button to allow users to send feedback via EmailJS API
 
 ### [404 Page](Https://github.com/PaulBowden673/Projects-MP-MP2/quiz404.html)
- - 404 Error page to direct user back to the home page.
- - Links to social media pages
+
+- 404 Error page to direct user back to the home page.
+- Links to social media pages
 
 
 ## Technologies Used
 
 ### Languages 
- -  [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)  - This was used for the layout of the website.
- -  [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)    - This was used to style the website.
- - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - THis was used to make the website interactive and make the quiz work.
+
+-  [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)  - This was used for the layout of the website.
+-  [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)    - This was used to style the website.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - THis was used to make the website interactive and make the quiz work.
+
 ### Libraries 
+
  - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) -  This was used to design a mobile-first responsive website layout quickly, also using components ( navigation bar, modal, form, footer)
+
  ### Tools
- - [Google Fonts](https://fonts.google.com/) - This was used for selecting the fonts for the website. 
- - [amiresponsive](http://ami.responsivedesign.is/) - This was used to check how responsive the site is on different devices.
- - [Gitpod](https://www.gitpod.io/) - Online IDE linked to GitHub repository, this was used to write my code.
- - [GitHub](https://github.com/) - This was used to store, host and deploy the project files, after being pushed from Gitpod.
- - [Lighthouse](https://developers.google.com/web/tools/lighthouse) - This was used to audit My site for quality and to check responsiveness. 
+
+- [Google Fonts](https://fonts.google.com/) - This was used for selecting the fonts for the website. 
+- [amiresponsive](http://ami.responsivedesign.is/) - This was used to check how responsive the site is on different devices.
+- [Gitpod](https://www.gitpod.io/) - Online IDE linked to GitHub repository, this was used to write my code.
+- [GitHub](https://github.com/) - This was used to store, host and deploy the project files, after being pushed from Gitpod.
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse) - This was used to audit My site for quality and to check responsiveness. 
 - [EmailJS](https://www.emailjs.com/) - This was used to send emails to the owner from the contact form contained in the quiz.
+
 ## Future updates
 
 - Fetch questions from JSON file to allow questions to be changed without changing the code - struggled to be able to impliment this at this time.
@@ -100,21 +110,25 @@ These can be found at the following links
  I have thoroughly tested this website and was unable to find any broken links within it. I have also tried to submit blank contact forms and forms with incorrect email addresses which gave me an error message by way of alert box when thhe emial was sent.
  
  ### Testing User Stories from UX section
+
 User stories from the UX section were tested to ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals. 
 
  #### First Time visitor
+
 1. As a first time Visitor, I want to easily understand the purpose of the site and how to play the game.
     1. On entering the site, the user is presented with a clean website detailing the purpose of the site and giving instructions on how to play the game after clicking on the rules button.  
 2. As a first time visitor, I want to find the game enjoyable and challenging.
     1. . On entering the website the user is presented with several buttons - Play, Rules, Highscores and Contact. THe user can then easily choose to play or to review the other options presented.
  
  #### Returning Visitor
+
 1.  As a returning visitor, I want to still find the game enjoyable and challenging. 
     1.  The questions are displayed in a random order everytime the game is started.
 2.  As a returning visitor, I want to be able to give feedback to the website owner and suggest improvements or ideas.
     1. The contact button takes the user from the home screen to blank email form for them to complete with name, email address and message. Upon clicking send email, the email is sent via EmailJS to the site owner.
 
 #### Frequent Visitor
+
 1. As a frequent visitor,  I want to still find the game enjoyable and challenging.
     1. The questions are presented in a random order everytime the game is played.
 2. As a frequent visitor,  I want to be able to try to beat the highest scores.
@@ -123,17 +137,21 @@ User stories from the UX section were tested to ensure that they all work as int
     1. The contact button takes the user from the home screen to blank email form for them to complete with name, email address and message. Upon clicking send email, the email is sent via EmailJS to the site owner.
     
 #### Devices
+
 - Samsung S9
 - Samsung S6 Lte Tablet
 - Ipad 
 - Iphone 6/7/8
 - Desktop with 4K 2056px Monitor
 - Dell Inspiron 5405 Laptop 
+
 #### Browsers
+
 - Microsoft Edge
 - Chrome
 - Firefox
 - Safari 
+
 ## Issues/Bugs
 
 - The score was showing the previous game score rather than the current game score. After investigation, I identified that the issue was in the script.js file. Once the game had ended the score was set to the local storage. The finalScore variable was then set to get the score from the local storage, this was getting the wrong score. To resolve the issue, I put the finalScore variable in the function that increments the score during the quiz and set it to return that score.After testing this more the issue was resolved.
@@ -147,6 +165,7 @@ User stories from the UX section were tested to ensure that they all work as int
 - On mobile devices, a UX issue was identified with the hover style. Once the user clicked the button to select their answer, the answer would have the correct class applied to change colour. However, once the next question was presented the hover style was still applied to the last selected button. To resolve this issue, I added a media query for hover: none. Now, when the user selects the answer buttons on mobile devices the hover effect won't be in place to distract from the answer buttons selected when the next question appears. The answer buttons are now displayed all in the same colour and will change only upon the user selecting the correct or incorrect answer.
 
 ### Validation
+
 All files passed validation testing at 
 
 
@@ -237,7 +256,23 @@ Forking the repository will make a copy of the original repository, to view or m
 
 ### Content
 
+I have borrowed code and inspiration from the following sources during this project
+
+- https://www.youtube.com/watch?v=f4fB9Xg2JEY&amp;t=3763s&amp;ab_channel=BrianDesignBrianDesign
+
+- https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript
+
+- https://www.lcn.com/blog/beginners-guide-custom-404-pages/
+
+- https://medium.com/nerd-for-tech/javascript-build-quiz-application-f6ee0a235417
+
+- https://codereview.stackexchange.com/questions/189399/quiz-app-from-a-json-file
+
 ### Media
+
+- Background image - www.Pexels.com. (Photo by Ash @ModernAfflatus)
+
+- 404 page image - www.flaticon.com
 
 
 ## Acknowledgements
