@@ -228,7 +228,7 @@ The project was deployed at GitHub Pages using the following steps
 
 1. Log in to GitHub
 2. Go to the repositories tab at the top of the screen. 
-3. Click on the repository named PaulBowden673/Projects-MP-MP2
+3. Click on the repository named PaulBowden673/Projects-MP-MP2-Quiz
 4. At the top of the repository, locate and click the 'Settings' button on the menu.
 5. Scroll down the Settings page until you locate 'GitHub Pages' section.
 6. Under 'Source', click on the dropdown menu and select 'Master Branch'.
@@ -238,13 +238,13 @@ The project was deployed at GitHub Pages using the following steps
 
 Forking the repository will make a copy of the original repository, to view or make changes without affecting the original repository using the following steps
 
-1. Log in to GitHub and locate the repository named PaulBowden673/Projects-Mp-MP2
+1. Log in to GitHub and locate the repository named PaulBowden673/Projects-MP-MP2-Quiz
 2. At the top of the Repository, above the 'Settings' button on the menu, locate the 'Fork' button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
-1. Log in to GitHub and locate the repository named PaulBowden673/Projects-MP-MP2
+1. Log in to GitHub and locate the repository named PaulBowden673/Projects-MP-MP2-Quiz
 2. Under the repository name, click 'Clone or Download'.
 3. To clone the repository using HTTPS, under 'Clone with HTTPS', copy the link.
 4. Open Git Bash
@@ -256,7 +256,7 @@ Forking the repository will make a copy of the original repository, to view or m
 
 ### Content
 
-I have borrowed code and inspiration from the following sources during this project
+I have borrowed code ideas and inspiration from the following sources during this project. This helped me to write my code and make my project work.
 
 - https://www.youtube.com/watch?v=f4fB9Xg2JEY&amp;t=3763s&amp;ab_channel=BrianDesignBrianDesign
 
@@ -267,6 +267,8 @@ I have borrowed code and inspiration from the following sources during this proj
 - https://medium.com/nerd-for-tech/javascript-build-quiz-application-f6ee0a235417
 
 - https://codereview.stackexchange.com/questions/189399/quiz-app-from-a-json-file
+
+- CodeInstitute 
 
 ### Media
 
