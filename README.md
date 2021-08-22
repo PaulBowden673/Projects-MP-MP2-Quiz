@@ -134,17 +134,38 @@ User stories from the UX section were tested to ensure that they all work as int
 
 ### Validation
 All files passed validation testing at 
+
+
+
 - [HTML]
+ HTML index.html page
  
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20index.html.png)
+  
+  HTML 404.html page
+  
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20quiz404.html.png)
 
-- [CSS]
+- [CSS] - Issue with validating with Bootstrap. When validated as Direct Input no issues were found
 
+ CSS Style.css 
+ 
+ By URL
+ 
   ![CSS Validation style.css](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style.css.png)
+  
+  By Direct Input
+  
   ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style.css%20Direct%20Input.png)
 
+  CSS 404Style.css
+  
+  By URL
+  
   ![CSS Validation quiz404.css](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style404.css.png)
+
+  By Direct Input
+ 
   ![CSS Validation Direct Input](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20CSS%20validator%20style404.css%20Direct%20Input.png)
 
 
@@ -159,8 +180,13 @@ Lighthouse Validation Mobile
 
 JsHint Validation Report
 
+Script.js
+
 ![jsHint Validation Report](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/JSHint%20validation%20script.js.png)
-![jsHint Validation Report 404.html](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/JSHint%20validation%20emailJS.js.png)
+
+EmailJS.js
+
+![jsHint Validation Report EmailJS.js](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/JSHint%20validation%20emailJS.js.png)
 ## Deployment 
 ### GitHub Pages
 
