@@ -222,7 +222,7 @@ function renderQuestion() {
 
     //function to assign answer boxes that correspond to the correct question
     answers.forEach(ans => {
-        const number = ans.dataset['number'];
+        const number = ans.dataset.number;
         ans.innerText = currentQuestion['ans' + number];
     });
 
@@ -238,7 +238,7 @@ answers.forEach(ans => {
 
         acceptingAnswers = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        const selectedAnswer = selectedChoice.dataset.number;
 
         //check if answer is correct and set the class
         let classToApply = selectedAnswer == currentQuestion.correct ? 'btn-correct' : 'btn-incorrect';
