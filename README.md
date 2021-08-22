@@ -1,5 +1,5 @@
 
-<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png" alt="Health & Safety Quiz" style="max-width:100%;">
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png" width="100%" alt="Health & Safety Quiz">
 
 
 <a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" rel="nofollow" target="_blank">Click  here</a> to access the site.
