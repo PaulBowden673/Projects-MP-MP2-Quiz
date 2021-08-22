@@ -137,7 +137,7 @@ All files passed validation testing at
 
 
 
-- [HTML]
+- [HTML] - Issue with empty heading id=Progress-text due to it being filled by javascript during game to show progress.
  ###### HTML index.html page
  
   ![HTML Validation](https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/validation/w3%20HTML%20Validation%20index.html.png)
