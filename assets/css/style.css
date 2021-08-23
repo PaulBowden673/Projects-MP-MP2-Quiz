@@ -250,7 +250,12 @@ tbody {
 }
 
 /* Media Queries */
-
+@media (hover: hover) and (pointer: fine) {
+  ans-btn:hover { 
+      color: #fff; 
+      background-color: #c20047;
+        }
+   }
 @media (hover: none) {
         .ans-btn:hover {
             background-color: #c20047;
