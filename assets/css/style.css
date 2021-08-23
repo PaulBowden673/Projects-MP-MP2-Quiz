@@ -152,13 +152,6 @@ a:hover {
     cursor: pointer;
 }
 
-@media (hover: none) {
-    .ans-btn:hover {
-        background-color: #c20047; 
-        color: #fff;
-    }
-}
-
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
