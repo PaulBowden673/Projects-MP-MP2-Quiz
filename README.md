@@ -73,13 +73,13 @@ These can be found at the following links
 - Contact button to allow users to send feedback via EmailJS API
 
 #### Home
-(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/home-page.png)
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/home-page.png" alt="Home page" width="100%">
 #### Rules
-(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/rules-page.png)
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/rules-page.png" alt="Rules Page" width="100%">
 #### Highscores
-(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/highscores-page.png)
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/highscores-page.png" alt="Highscores Page" width="100%">
 #### Contact
-(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/contact-page.png)
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/contact-page.png" alt="Contact Page" width="100%">
 
 
 ### [404 Page](Https://github.com/PaulBowden673/Projects-MP-MP2/quiz404.html)
