@@ -205,7 +205,7 @@ function watchForHover() {
     let lastTouchTime = 0
   
     function enableHover() {
-      if (new Date() - lastTouchTime <= 900) return
+      if (new Date() - lastTouchTime <= 2000) return
       document.body.classList.add('hasHover')
     }
   
