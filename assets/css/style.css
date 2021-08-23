@@ -151,7 +151,12 @@ a:hover {
     color: black;
     cursor: pointer;
 }
-
+@media (hover: hover) and (pointer: fine) {
+  ans-btn:hover { 
+      color: #fff; 
+      background-color: #c20047;
+        }
+   }
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
@@ -250,12 +255,7 @@ tbody {
 }
 
 /* Media Queries */
-@media (hover: hover) and (pointer: fine) {
-  ans-btn:hover { 
-      color: #fff; 
-      background-color: #c20047;
-        }
-   }
+
 
 @media (max-width: 646px) {
     #home-section p {
