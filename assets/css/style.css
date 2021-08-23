@@ -27,11 +27,11 @@ body {
     color: #fff;
 }
 
-.btn[disabled]:hover {
+body.hasHover .btn[disabled]:hover {
     cursor: not-allowed;
 }
 
-.btn-hover:hover {
+body.hasHover .btn-hover:hover {
     background-color: #ffbb59;
     border: none;
     color: black;
@@ -51,7 +51,7 @@ a {
     color: #571ce0;
     font-size: 18px;
 }
-a:hover {
+body.hasHover a:hover {
     color: #ffbb59;
     cursor: pointer;
 }
@@ -145,26 +145,13 @@ a:hover {
     font-size: 20px;
 }
 
-.ans-btn:hover {
+body.hasHover .ans-btn:hover {
     background-color: #ffbb59;
     border: none;
     color: black;
     cursor: pointer;
 }
-@media (hover: hover) and (pointer: fine) {
-  ans-btn:hover { 
-      color: #fff; 
-      background-color: #c20047;
-        }
-   }
-@media (hover: none) {
-  .ans-btn:active{
-	background: #fbb59;
-	color:black;
-	border: none;
-	cursor: pointer;
-  }
-}
+
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
@@ -191,7 +178,7 @@ a:hover {
     padding: 8px
 }
 
-#exit-game:hover {
+body.hasHover #exit-game:hover {
     background-color: #ffbb59;
     border: 1px solid #fc5b5b;
     color: black;
@@ -263,7 +250,6 @@ tbody {
 }
 
 /* Media Queries */
-
 
 @media (max-width: 646px) {
     #home-section p {
