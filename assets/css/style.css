@@ -145,11 +145,15 @@ a:hover {
     font-size: 20px;
 }
 
-body.hasHover .ans-btn:hover {
+.ans-btn:hover {
     background-color: #ffbb59;
     border: none;
     color: black;
     cursor: pointer;
+}
+
+.ans-btn:active {
+    color: #fff;
 }
 
 .btn-correct {
@@ -252,8 +256,9 @@ tbody {
 /* Media Queries */
 
 @media (max-width: 768px) and (hover: none) {
-    .ans-btn:hover,
-    .ans-btn:active { color: #fff; }
+    .ans-btn:hover { 
+        color: #fff;
+     }
   }
 
 @media (max-width: 646px) {
