@@ -157,6 +157,14 @@ a:hover {
       background-color: #c20047;
         }
    }
+@media (hover: none) {
+  .ans-btn:active{
+	background: #fbb59;
+	color:black;
+	border: none;
+	cursor: pointer;
+  }
+}
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
