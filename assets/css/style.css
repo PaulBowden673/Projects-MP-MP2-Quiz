@@ -106,7 +106,7 @@ a:hover {
     border-radius: 25px;
     width: 800px;
     max-width: 80%;
-    padding: 10px 25px 10px 25px;
+    padding: 50px 25px 50px 25px;
     border: 1px solid #fff;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 }
 
 #score {
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 30px;
 }
@@ -152,6 +152,13 @@ a:hover {
     cursor: pointer;
 }
 
+@media (hover: none) {
+    .ans-btn:hover {
+        background-color: #c20047; 
+        color: #fff;
+    }
+}
+
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
@@ -170,17 +177,17 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 2px;
     background-color: black;
-    border: 1px solid #571ce0;
+    border: 1px solid #ffbb59;
     color: #fff;
     border-radius: 5px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 8px
 }
 
 #exit-game:hover {
     background-color: #ffbb59;
-    border: 1px solid #fc5b5b;
+    border: 1px solid #ffbb59;
     color: black;
 }
 
@@ -236,7 +243,7 @@ li {
 
 .table th {
     text-transform: uppercase;
-    font-family: "Luckiest Guy", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
