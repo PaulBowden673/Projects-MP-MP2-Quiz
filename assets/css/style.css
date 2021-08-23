@@ -252,7 +252,8 @@ tbody {
 /* Media Queries */
 
 @media (max-width: 768px) and (hover: none) {
-    .ans-btn:hover { color: #fff; }
+    .ans-btn:hover,
+    .ans-btn:active { color: #fff; }
   }
 
 @media (max-width: 646px) {
