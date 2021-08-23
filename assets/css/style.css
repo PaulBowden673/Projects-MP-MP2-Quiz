@@ -251,7 +251,7 @@ tbody {
 
 /* Media Queries */
 
-@media (hover: none) {
+@media (hover: hover) and (pointer: fine) {
     .ans-btn:hover { color: inherit; }
   }
 
