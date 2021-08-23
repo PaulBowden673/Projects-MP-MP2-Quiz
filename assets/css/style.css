@@ -256,12 +256,6 @@ tbody {
       background-color: #c20047;
         }
    }
-@media (hover: none) {
-        .ans-btn:hover {
-            background-color: #c20047;
-            color: #fff;
-        }
-    }
 
 @media (max-width: 646px) {
     #home-section p {
