@@ -6,7 +6,7 @@
 
 **I built this website to give users a fun and enjoyable game to play. I based the game on Health & Safety questions so it can also be used for training**
 ## UX ##
-**The purpose of this project is to create am interactive frontend website using HTML, CSS and JavaScript. In order to do this I have built a Health & Safety Quiz game, where the users have to answer 20 questions about general Workplace Health & Safety**
+**The purpose of this project is to create an Interactive Frontend Website using HTML, CSS and JavaScript. In order to do this I have built a Health & Safety Quiz game, where the users have to answer 20 questions about general Workplace Health & Safety**
 
 
 
