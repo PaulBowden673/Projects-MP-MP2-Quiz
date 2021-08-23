@@ -197,11 +197,6 @@ let score = 0;
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 20;
 
-
-// remove hover on touch devices
-
-
-
 //function for new question
 
 function renderQuestion() {
