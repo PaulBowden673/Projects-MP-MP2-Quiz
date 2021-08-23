@@ -148,7 +148,7 @@ body.hasHover a:hover {
 body.hasHover .ans-btn:hover {
     background-color: #ffbb59;
     border: none;
-    color: black;
+    color: #fff;
     cursor: pointer;
 }
 
