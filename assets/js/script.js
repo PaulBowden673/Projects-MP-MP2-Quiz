@@ -223,8 +223,6 @@ function watchForHover() {
     enableHover()
   }
 
-
-
 //function for new question
 
 function renderQuestion() {
