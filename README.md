@@ -1,5 +1,5 @@
 
-<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/images/quiz-responsive-image.png" width="100%" alt="Health & Safety Quiz">
+<img src="https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/quiz-responsive-image.png" width="100%" alt="Health & Safety Quiz">
 
 
 <a href="https://paulbowden673.github.io/Projects-MP-MP2-Quiz/" rel="nofollow" target="_blank">Click  here</a> to access the site.
@@ -73,13 +73,13 @@ These can be found at the following links
 - Contact button to allow users to send feedback via EmailJS API
 
 #### Home
-
+(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/home-page.png)
 #### Rules
-
+(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/rules-page.png)
 #### Highscores
-
+(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/highscores-page.png)
 #### Contact
-
+(https://github.com/PaulBowden673/Projects-MP-MP2-Quiz/blob/main/assets/documents/readme-images/contact-page.png)
 
 
 ### [404 Page](Https://github.com/PaulBowden673/Projects-MP-MP2/quiz404.html)
