@@ -199,15 +199,13 @@ const MAX_QUESTIONS = 20;
 
 
 // remove hover on touch devices
+
 function watchForHover() {
     // lastTouchTime is used for ignoring emulated mousemove events
-    // that are fired after touchstart events. Since they're
-    // indistinguishable from real events, we use the fact that they're
-    // fired a few milliseconds after touchstart to filter them.
     let lastTouchTime = 0
   
     function enableHover() {
-      if (new Date() - lastTouchTime < 100) return
+      if (new Date() - lastTouchTime < 500) return
       document.body.classList.add('hasHover')
     }
   
@@ -227,7 +225,6 @@ function watchForHover() {
   }
   
   watchForHover()
-
 
 //function for new question
 

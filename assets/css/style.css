@@ -251,13 +251,6 @@ tbody {
 
 /* Media Queries */
 
-@media (hover: none) {
-    ans-btn:hover { color: inherit; }
-  }
-
-
-
-
 @media (max-width: 646px) {
     #home-section p {
         font-size: 15px;
