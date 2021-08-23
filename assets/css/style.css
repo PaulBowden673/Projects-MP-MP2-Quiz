@@ -251,8 +251,8 @@ tbody {
 
 /* Media Queries */
 
-@media (hover: hover) and (pointer: fine) {
-    .ans-btn:hover { color: #fff; }
+@media (max-width 768px) and (hover: hover) and (pointer: fine) {
+    .ans-btn:hover { color: inherit; }
   }
 
 @media (max-width: 646px) {
