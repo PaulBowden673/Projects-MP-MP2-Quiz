@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;500;600;700;800&family=Roboto&display=swap');
 
+/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,7 @@
 }
 
 body {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: black;
     color: #fff;
     display: flex;
@@ -15,9 +17,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url('../images/caution-tape.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: url("../images/caution-tape.jpg") center center no-repeat;
     background-size: cover;
 }
 
@@ -42,25 +42,7 @@ body {
     display: none;
 }
 
-strong {
-    color: red;
-}
-
-
-a {
-    color: #571ce0;
-    font-size: 18px;
-}
-a:hover {
-    color: #ffbb59;
-    cursor: pointer;
-}
-
-.fa-exclamation-triangle {
-    color: #ffbb59;
-}
-
-/* Home Section */
+/* Home Section Styles */
 
 #home-section {
     background-color: black;
@@ -72,11 +54,14 @@ a:hover {
 }
 
 .home-container {
-    margin: 20px 0 20px 0;
+    margin: 5px 0 2px 0;
 }
 
+.fa-exclamation-triangle {
+    color: #ffbb59;
+}
 #heading {
-    font-family: 'Merriweather Sans', sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
     text-align: center;
     font-size: 3rem;
     text-transform: uppercase;
@@ -85,21 +70,21 @@ a:hover {
 
 #home-section p {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
 }
 
 .btn-block {
     width: 100%;
-    margin: 8px 0;
+    margin: 10px 0;
     font-family: "Merriweather Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
-/* Start Quiz Section */
+/* Start Quiz Section Styles */
 
 #quiz-game-section {
     background-color: black;
@@ -124,7 +109,7 @@ a:hover {
 }
 
 #score {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 600;
     font-size: 30px;
 }
@@ -154,7 +139,7 @@ a:hover {
 
 @media (hover: none) {
     .ans-btn:hover {
-        background-color: #c20047; 
+        background-color: #571ce0; 
         color: #fff;
     }
 }
@@ -191,35 +176,31 @@ a:hover {
     color: black;
 }
 
-/* Modal Content */
+/* General Modal Content Styles */
 
 .modal-content {
     background-color: black;
     border: 1px solid #fff;
-    border-radius: 3%;
+    border-radius: 6%;
+    font-size: 14px;
 }
 
 .modal-footer .btn {
     font-weight: 400;
     text-transform: uppercase;
-}
-
-.modal-footer {
-    padding-top: 1px;
-    padding-bottom: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.25rem;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 2rem;
     letter-spacing: 2px;
-    padding-top: 6px;
+    padding-top: 2px;
 }
 
-h3,
-h4,
-h5 {
-    font-family: 'Roboto', sans-serif;
+h3, h4 {
+    font-family: "Merriweather Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -229,10 +210,6 @@ h5 {
 strong {
     color: red;
     text-transform: uppercase;
-}
-
-li {
-    font-size: 14px;
 }
 
 /* Highscores Section Modal */
@@ -256,135 +233,136 @@ tbody {
     font-size: 20px;
 }
 
+/* Finish Quiz Section Modal */
+
+@media (max-width: 420px) {
+    #finish-quiz-section h2 {
+        font-size: 1.45rem;
+    }  
+
+    #return-home, #play-again, #save-score {
+        width: 100%;
+    }
+}
+
 /* Media Queries */
 
 @media (max-width: 646px) {
-    #home-section p {
+    #home-section p{
         font-size: 15px;
-    }
+    } 
 }
 
 @media (max-width: 474px) {
     #heading {
         font-size: 2.8rem;
-    }
+    } 
 }
 
 @media (max-width: 320px) {
     #heading {
         font-size: 2.5rem;
+    } 
+
+    #home-section p{
+        font-size: 12px;
+    } 
+
+    .btn-block {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    #question {
+        font-size: 18px;
     }
 
-    
-
-    @media (max-width: 600px) {
-        #question {
-            font-size: 18px;
-        }
-
-        #quiz-section .btn {
-            font-size: 16px;
-        }
-
-        #exit-section {
-            font-size: 20px;
-        }
-
-        #quiz-section h4 {
-            font-size: 18px;
-        }
-
-        #score {
-            font-size: 20px;
-        }
+    #quiz-game-section .btn {
+        font-size: 16px;
     }
 
-    @media (max-width: 480px) {
-
-        #questions-area {
-            padding-top: 10px;
-        }
-
-        #question {
-            font-size: 14px;
-        }
-
-        #quiz-section .btn {
-            font-size: 14px;
-        }
-
-        #exit-game {
-            margin-top: 0;
-            font-size: 16px;
-        }
-
-        #progress-bar {
-            width: 100%;
-        }
-
-        #score-display {
-            width: 100%;
-            margin-top: 5px;
-        }
+    #exit-game {
+        font-size: 20px;
     }
 
-    @media (max-width: 308px) {
-        #quiz-section h4 {
-            font-size: 14px;
-        }
+    #quiz-game-section h4 {
+        font-size: 18px;
     }
 
-    @media (max-height: 655px) {
-        #quiz-section {
-            padding: 22px;
-        }
+    #score {
+        font-size: 20px;
+    }
+}
 
-        #quiz-section .btn {
-            margin: 5px 0;
-        }
+@media (max-width: 480px) {
+
+    #questions-area {
+        padding-top: 10px;
     }
 
-    @media (max-height: 568px) {
-        #quiz-section {
-            padding: 18px;
-        }
-
-        hr {
-            margin-top: 5px;
-            margin-bottom: 10px;
-        }
+    #question {
+        font-size: 14px;
     }
 
-    @media (max-width: 600px) {
-        h2 {
-            font-size: 2rem;
-        }
-
-        .modal-footer .btn {
-            font-size: 15px;
-        }
-
-        p {
-            font-size: 15px;
-        }
-
-        li {
-            font-size: 15px;
-        }
-
-        .table th {
-            font-size: 1.2rem;
-        }
+    #quiz-game-section .btn {
+        font-size: 14px;
     }
 
-    @media (max-width: 420px) {
-        #finish-section h2 {
-            font-size: 1.45rem;
-        }
+    #exit-game {
+        margin-top: 0;
+        font-size: 16px;
+    }
 
-        #return-home,
-        #play-again,
-        #save-score {
-            width: 100%;
-        }
-    }}
+    #progress-bar {
+        width: 100%;
+    }
+
+    #score-display {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 308px) {
+    #quiz-game-section h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-height: 655px) {
+    #quiz-game-section {
+        padding: 22px;
+    }
+
+    #quiz-game-section .btn {
+        margin: 5px 0;
+    }
+}
+
+@media (max-height: 568px) {
+    #quiz-game-section {
+        padding: 18px;
+    }
+
+    hr {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .table th {
+        font-size: 1.2rem;
+    } 
+
+    tbody {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    li {
+        font-size: 15px;
+    }
+}
