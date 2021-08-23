@@ -72,10 +72,22 @@ These can be found at the following links
 - Buttons to view the rules and highscores, restart the game and clear the high scores list.
 - Contact button to allow users to send feedback via EmailJS API
 
+#### Home
+
+#### Rules
+
+#### Highscores
+
+#### Contact
+
+
+
 ### [404 Page](Https://github.com/PaulBowden673/Projects-MP-MP2/quiz404.html)
 
 - 404 Error page to direct user back to the home page.
 - Links to social media pages
+
+#### 404 Page
 
 
 ## Technologies Used
