@@ -16,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 130vh;
+    height: 125vh;
     background: url("../images/caution-tape.jpg") center center no-repeat;
     background-size: cover;
 }
