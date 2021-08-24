@@ -130,13 +130,6 @@ body {
     font-size: 20px;
 }
 
-.ans-btn:hover {
-    background-color: #ffbb59;
-    border: none;
-    color: black;
-    cursor: pointer;
-}
-
 .btn-correct {
     background-color: rgb(143, 199, 59);
     border: none;
@@ -357,5 +350,14 @@ tbody {
 @media (max-width: 600px) {
     li {
         font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .ans-btn:hover {
+        background-color: #ffbb59;
+        border: none;
+        color: black;
+        cursor: pointer;
     }
 }
