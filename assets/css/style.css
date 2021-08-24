@@ -84,6 +84,9 @@ body {
     font-size: 25px;
 }
 
+ul.list-inline.social-links.mt-0 {
+    font-size: 24px;
+}
 /* Start Quiz Section Styles */
 
 #quiz-game-section {
