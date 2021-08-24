@@ -1,5 +1,5 @@
 /*jshint esversion: 6 */
-// Array of questions
+
 const questions = [{
     question: "What does COSHH stand for?",
     ans1: "Control of Substances Hazardous to Health",
@@ -196,7 +196,7 @@ let availableQuestions = [];
 let score = 0;
 const SCORE_POINTS = 10;
 const MAX_QUESTIONS = 20;
-
+const TimeBetweenQuestions;
 //function for new question
 
 function renderQuestion() {
@@ -258,7 +258,7 @@ answers.forEach(ans => {
             selectedChoice.classList.add('ans-btn');
             renderQuestion();
 
-        }, 800);
+        }, timeBetweenQuestions);
     });
 });
 
