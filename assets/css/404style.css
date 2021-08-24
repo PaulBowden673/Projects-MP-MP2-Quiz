@@ -21,7 +21,7 @@ body {
     background-size: cover;
 }
 
-#rectangle {
+.rectangle {
     background-color: black;
     border-radius: 25px;
     width: 600px;
@@ -46,22 +46,24 @@ img {
   color: #fff;
 }
 
-h2 {
-    font-size: 7rem;
-}
-h3 {
-    font-size: 4rem;
-}
-p {
-    font-size: 2rem;
-}
-
 .btn {
     background-color: #571ce0;
     border: none;
     color: #fff;
 }
 
+h2 {
+    margin-top: 20px;
+    font-size: 120px;
+}
+
+h3 {
+    font-size: 60px;
+}
+
+p {
+    font-size: 28px;
+}
 .btn[disabled]:hover {
     cursor: not-allowed;
 }
@@ -81,6 +83,25 @@ a {
 }
 a:hover {
     color: #ffbb59;
-    cursor: pointer;
+    cursor: pointer; 
+}
+
+@media (max-width:600px) {
+    h2 {
+        margin-top: 30px;
+        font-size: 50px;
+    }
     
+    h3 {
+        font-size: 30px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 0;
+
+    }
+        
+        
+    }
 }
