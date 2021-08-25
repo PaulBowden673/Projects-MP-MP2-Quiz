@@ -59,7 +59,6 @@ body {
 
 .fa-exclamation-triangle {
     color: #ffbb59;
-    font-size: inherit;
 }
 #heading {
     font-family: "Merriweather Sans", sans-serif;
@@ -88,9 +87,6 @@ body {
     font-size: 25px;
 }
 
-.fa {
-    font-size: 24px;
-}
 /* Start Quiz Section Styles */
 
 #quiz-game-section {
@@ -244,6 +240,9 @@ tbody {
     #home-section p{
         font-size: 15px;
     } 
+    .list-inline-item {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 474px) {
@@ -351,12 +350,6 @@ tbody {
 
     tbody {
         font-size: 16px;
-    }
-}
-
-@media (max-width: 600px) {
-    li {
-        font-size: 15px;
     }
 }
 
